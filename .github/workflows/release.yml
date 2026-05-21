@@ -1,0 +1,50 @@
+# Release / publish — runs ONLY when triggered explicitly (never on push).
+#
+# Trigger locally after versioning:
+#   pnpm version-packages   # bump version + changelog
+#   git add -A && git commit -m "chore: version packages" && git push
+#   pnpm release            # starts this workflow
+#
+# Or manually: gh workflow run release.yml
+
+name: Release
+
+on:
+  workflow_dispatch:
+  repository_dispatch:
+    types: [release]
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    name: Build and publish
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          NEXT_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.NEXT_PUBLIC_SUPABASE_ANON_KEY }}
+        run: pnpm build
+
+      - name: Publish
+        run: pnpm run publish:ci
