@@ -1,0 +1,16 @@
+<svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+  <rect x="1" y="1" rx="3" fill="#0a1520" stroke="#3ddc84" stroke-width="1.2"/>
+  <!-- output lines with icons -->
+  <circle cx="6"  cy="9"  r="1.5" fill="#3ddc84" opacity="0.8"/>
+  <rect x="9"  y="7.5" rx="0.4" fill="#1a2535"/>
+  <circle cx="6"  cy="15" r="1.5" fill="#ffaa00" opacity="0.7"/>
+  <rect x="9"  y="13.5" rx="0.4" fill="#1a2535"/>
+  <circle cx="6"  cy="21" r="1.5" fill="#ff4d6a" opacity="0.8"/>
+  <rect x="9"  y="19.5" rx="0.4" fill="#ff4d6a" opacity="0.08"/>
+  <rect x="9"  y="19.5" rx="0.4" fill="#ff4d6a" opacity="0.12"/>
+  <circle cx="6"  cy="27" r="1.5" fill="#3ddc84" opacity="0.6"/>
+  <rect x="9"  y="25.5" rx="0.4" fill="#1a2535"/>
+  <!-- blinking cursor -->
+  <rect x="4"  y="31" rx="0.4" fill="#091828" stroke="#2a3f55" stroke-width="0.5"/>
+  <rect x="5"  y="31.5" rx="0.2" fill="#3ddc84" opacity="0.8"/>
+</svg>

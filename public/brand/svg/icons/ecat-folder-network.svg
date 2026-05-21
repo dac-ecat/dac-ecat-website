@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <path d="M 3,10 Q 3,8 5,8 L 12,8 L 14,6 L 27,6 Q 29,6 29,8 L 29,24 Q 29,26 27,26 L 5,26 Q 3,26 3,24 Z" fill="#0d1e30" stroke="#00e5c8" stroke-width="1.2"/>
+  <path d="M 3,10 L 29,10" stroke="#00e5c8" stroke-width="0.8" opacity="0.5"/>
+  <!-- ecat ring in folder -->
+  <circle cx="16" cy="18" r="5.5" fill="none" stroke="#00e5c8" stroke-width="0.8" stroke-dasharray="2,2" opacity="0.5"/>
+  <circle cx="16" cy="12.5" r="1.5" fill="#00e5c8" opacity="0.8"/>
+  <circle cx="21.5" cy="18" r="1.5" fill="#00e5c8" opacity="0.8"/>
+  <circle cx="16"   cy="23.5" r="1.5" fill="#ffaa00" opacity="0.8"/>
+  <circle cx="10.5" cy="18"   r="1.5" fill="#00e5c8" opacity="0.8"/>
+</svg>

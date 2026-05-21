@@ -1,0 +1,578 @@
+{
+  "generatedAt": "2026-05-20T08:12:56.212Z",
+  "sources": [
+    {
+      "source": "dac-ecat-brand.html",
+      "count": 17,
+      "assets": [
+        {
+          "slug": "splash-screen",
+          "label": "splash-screen",
+          "file": "brand/splash-screen.svg"
+        },
+        {
+          "slug": "app-icon-512px",
+          "label": "App Icon · 512px",
+          "file": "brand/app-icon-512px.svg"
+        },
+        {
+          "slug": "app-icon-128px",
+          "label": "App Icon · 128px",
+          "file": "brand/app-icon-128px.svg"
+        },
+        {
+          "slug": "favicon-32px",
+          "label": "Favicon · 32px",
+          "file": "brand/favicon-32px.svg"
+        },
+        {
+          "slug": "micro-16px",
+          "label": "Micro · 16px",
+          "file": "brand/micro-16px.svg"
+        },
+        {
+          "slug": "horizontal-lockup",
+          "label": "Horizontal Lockup",
+          "file": "brand/horizontal-lockup.svg"
+        },
+        {
+          "slug": "stacked-wordmark",
+          "label": "Stacked Wordmark",
+          "file": "brand/stacked-wordmark.svg"
+        },
+        {
+          "slug": "on-light-background",
+          "label": "On Light Background",
+          "file": "brand/on-light-background.svg"
+        },
+        {
+          "slug": "ecat-ring-node",
+          "label": "ECAT Ring Node",
+          "file": "brand/ecat-ring-node.svg"
+        },
+        {
+          "slug": "bus-monitor",
+          "label": "Bus Monitor",
+          "file": "brand/bus-monitor.svg"
+        },
+        {
+          "slug": "dac-node",
+          "label": "DAC Node",
+          "file": "brand/dac-node.svg"
+        },
+        {
+          "slug": "bus-link",
+          "label": "Bus Link",
+          "file": "brand/bus-link.svg"
+        },
+        {
+          "slug": "paw-signal",
+          "label": "Paw / Signal",
+          "file": "brand/paw-signal.svg"
+        },
+        {
+          "slug": "disconnect-error",
+          "label": "Disconnect / Error",
+          "file": "brand/disconnect-error.svg"
+        },
+        {
+          "slug": "loading-spinner",
+          "label": "Loading Spinner",
+          "file": "brand/loading-spinner.svg"
+        },
+        {
+          "slug": "progress-init-bar",
+          "label": "Progress / Init Bar",
+          "file": "brand/progress-init-bar.svg"
+        },
+        {
+          "slug": "asset",
+          "label": "asset",
+          "file": "brand/asset.svg"
+        }
+      ]
+    },
+    {
+      "source": "dac-ecat-icons.html",
+      "count": 38,
+      "assets": [
+        {
+          "slug": "dacecat",
+          "label": ".dacecat Project",
+          "file": "icons/dacecat.svg"
+        },
+        {
+          "slug": "dacatsln",
+          "label": ".dacatsln Solution",
+          "file": "icons/dacatsln.svg"
+        },
+        {
+          "slug": "dacat",
+          "label": ".dacat Config",
+          "file": "icons/dacat.svg"
+        },
+        {
+          "slug": "dacvar",
+          "label": ".dacvar Variables",
+          "file": "icons/dacvar.svg"
+        },
+        {
+          "slug": "py",
+          "label": ".py Python",
+          "file": "icons/py.svg"
+        },
+        {
+          "slug": "claude",
+          "label": ".claude AI Config",
+          "file": "icons/claude.svg"
+        },
+        {
+          "slug": "cursor",
+          "label": ".cursor Editor",
+          "file": "icons/cursor.svg"
+        },
+        {
+          "slug": "json",
+          "label": ".json JSON",
+          "file": "icons/json.svg"
+        },
+        {
+          "slug": "xml",
+          "label": ".xml XML",
+          "file": "icons/xml.svg"
+        },
+        {
+          "slug": "csv",
+          "label": ".csv Data Table",
+          "file": "icons/csv.svg"
+        },
+        {
+          "slug": "txt",
+          "label": ".txt Text",
+          "file": "icons/txt.svg"
+        },
+        {
+          "slug": "config",
+          "label": ".config Config",
+          "file": "icons/config.svg"
+        },
+        {
+          "slug": "cal",
+          "label": ".cal Calibration",
+          "file": "icons/cal.svg"
+        },
+        {
+          "slug": "data",
+          "label": ".data Dataset",
+          "file": "icons/data.svg"
+        },
+        {
+          "slug": "folder-directory",
+          "label": "Folder Directory",
+          "file": "icons/folder-directory.svg"
+        },
+        {
+          "slug": "folder-open-expanded",
+          "label": "Folder Open Expanded",
+          "file": "icons/folder-open-expanded.svg"
+        },
+        {
+          "slug": "ecat-folder-network",
+          "label": "ECAT Folder Network",
+          "file": "icons/ecat-folder-network.svg"
+        },
+        {
+          "slug": "int-16-bit",
+          "label": "INT 16-bit",
+          "file": "icons/int-16-bit.svg"
+        },
+        {
+          "slug": "uint-unsigned",
+          "label": "UINT Unsigned",
+          "file": "icons/uint-unsigned.svg"
+        },
+        {
+          "slug": "dint-32-bit",
+          "label": "DINT 32-bit",
+          "file": "icons/dint-32-bit.svg"
+        },
+        {
+          "slug": "lint-64-bit",
+          "label": "LINT 64-bit",
+          "file": "icons/lint-64-bit.svg"
+        },
+        {
+          "slug": "bool-boolean",
+          "label": "BOOL Boolean",
+          "file": "icons/bool-boolean.svg"
+        },
+        {
+          "slug": "byte-8-bit",
+          "label": "BYTE 8-bit",
+          "file": "icons/byte-8-bit.svg"
+        },
+        {
+          "slug": "word-16-bit",
+          "label": "WORD 16-bit",
+          "file": "icons/word-16-bit.svg"
+        },
+        {
+          "slug": "dword-32-bit",
+          "label": "DWORD 32-bit",
+          "file": "icons/dword-32-bit.svg"
+        },
+        {
+          "slug": "real-float-32",
+          "label": "REAL Float 32",
+          "file": "icons/real-float-32.svg"
+        },
+        {
+          "slug": "lreal-float-64",
+          "label": "LREAL Float 64",
+          "file": "icons/lreal-float-64.svg"
+        },
+        {
+          "slug": "string-text",
+          "label": "STRING Text",
+          "file": "icons/string-text.svg"
+        },
+        {
+          "slug": "array-collection",
+          "label": "ARRAY Collection",
+          "file": "icons/array-collection.svg"
+        },
+        {
+          "slug": "struct-record",
+          "label": "STRUCT Record",
+          "file": "icons/struct-record.svg"
+        },
+        {
+          "slug": "enum-enumeration",
+          "label": "ENUM Enumeration",
+          "file": "icons/enum-enumeration.svg"
+        },
+        {
+          "slug": "time-duration",
+          "label": "TIME Duration",
+          "file": "icons/time-duration.svg"
+        },
+        {
+          "slug": "date-calendar",
+          "label": "DATE Calendar",
+          "file": "icons/date-calendar.svg"
+        },
+        {
+          "slug": "pointer-ref",
+          "label": "POINTER Ref",
+          "file": "icons/pointer-ref.svg"
+        },
+        {
+          "slug": "bitfield-flags",
+          "label": "BITFIELD Flags",
+          "file": "icons/bitfield-flags.svg"
+        },
+        {
+          "slug": "null-nil-none",
+          "label": "NULL Nil / None",
+          "file": "icons/null-nil-none.svg"
+        },
+        {
+          "slug": "channel-dac-i-o",
+          "label": "CHANNEL DAC I/O",
+          "file": "icons/channel-dac-i-o.svg"
+        },
+        {
+          "slug": "task-cycle",
+          "label": "TASK Cycle",
+          "file": "icons/task-cycle.svg"
+        }
+      ]
+    },
+    {
+      "source": "dac-ecat-icons-v2.html",
+      "count": 56,
+      "assets": [
+        {
+          "slug": "monaco-editor",
+          "label": "Monaco Editor",
+          "file": "icons-v2/monaco-editor.svg"
+        },
+        {
+          "slug": "file-explorer",
+          "label": "File Explorer",
+          "file": "icons-v2/file-explorer.svg"
+        },
+        {
+          "slug": "variable-explorer",
+          "label": "Variable Explorer",
+          "file": "icons-v2/variable-explorer.svg"
+        },
+        {
+          "slug": "terminal-shell",
+          "label": "Terminal Shell",
+          "file": "icons-v2/terminal-shell.svg"
+        },
+        {
+          "slug": "claude-ai-chat",
+          "label": "Claude AI Chat",
+          "file": "icons-v2/claude-ai-chat.svg"
+        },
+        {
+          "slug": "cursor-ai-ide",
+          "label": "Cursor AI IDE",
+          "file": "icons-v2/cursor-ai-ide.svg"
+        },
+        {
+          "slug": "plot-waveform",
+          "label": "Plot Waveform",
+          "file": "icons-v2/plot-waveform.svg"
+        },
+        {
+          "slug": "scatter-xy-plot",
+          "label": "Scatter XY Plot",
+          "file": "icons-v2/scatter-xy-plot.svg"
+        },
+        {
+          "slug": "fft-spectrum",
+          "label": "FFT Spectrum",
+          "file": "icons-v2/fft-spectrum.svg"
+        },
+        {
+          "slug": "histogram-dist",
+          "label": "Histogram Dist.",
+          "file": "icons-v2/histogram-dist.svg"
+        },
+        {
+          "slug": "gauge-meter",
+          "label": "Gauge Meter",
+          "file": "icons-v2/gauge-meter.svg"
+        },
+        {
+          "slug": "heatmap-matrix",
+          "label": "Heatmap Matrix",
+          "file": "icons-v2/heatmap-matrix.svg"
+        },
+        {
+          "slug": "data-table",
+          "label": "Data Table",
+          "file": "icons-v2/data-table.svg"
+        },
+        {
+          "slug": "ecat-network",
+          "label": "ECAT Network",
+          "file": "icons-v2/ecat-network.svg"
+        },
+        {
+          "slug": "logger-recorder",
+          "label": "Logger Recorder",
+          "file": "icons-v2/logger-recorder.svg"
+        },
+        {
+          "slug": "properties-panel",
+          "label": "Properties Panel",
+          "file": "icons-v2/properties-panel.svg"
+        },
+        {
+          "slug": "debug-dap",
+          "label": "Debug DAP",
+          "file": "icons-v2/debug-dap.svg"
+        },
+        {
+          "slug": "search-find-amp-replace",
+          "label": "Search Find &amp; Replace",
+          "file": "icons-v2/search-find-amp-replace.svg"
+        },
+        {
+          "slug": "output-console",
+          "label": "Output Console",
+          "file": "icons-v2/output-console.svg"
+        },
+        {
+          "slug": "online-connected",
+          "label": "Online Connected",
+          "file": "icons-v2/online-connected.svg"
+        },
+        {
+          "slug": "offline-disconnected",
+          "label": "Offline Disconnected",
+          "file": "icons-v2/offline-disconnected.svg"
+        },
+        {
+          "slug": "warning-caution",
+          "label": "Warning Caution",
+          "file": "icons-v2/warning-caution.svg"
+        },
+        {
+          "slug": "error-fault",
+          "label": "Error Fault",
+          "file": "icons-v2/error-fault.svg"
+        },
+        {
+          "slug": "init-starting",
+          "label": "Init Starting",
+          "file": "icons-v2/init-starting.svg"
+        },
+        {
+          "slug": "pre-op-ecat-state",
+          "label": "Pre-Op ECAT State",
+          "file": "icons-v2/pre-op-ecat-state.svg"
+        },
+        {
+          "slug": "safe-op-ecat-state",
+          "label": "Safe-Op ECAT State",
+          "file": "icons-v2/safe-op-ecat-state.svg"
+        },
+        {
+          "slug": "op-running",
+          "label": "Op Running",
+          "file": "icons-v2/op-running.svg"
+        },
+        {
+          "slug": "paused-halted",
+          "label": "Paused Halted",
+          "file": "icons-v2/paused-halted.svg"
+        },
+        {
+          "slug": "stopped-abort",
+          "label": "Stopped Abort",
+          "file": "icons-v2/stopped-abort.svg"
+        },
+        {
+          "slug": "ok-synced",
+          "label": "OK Synced",
+          "file": "icons-v2/ok-synced.svg"
+        },
+        {
+          "slug": "link-lost-no-signal",
+          "label": "Link Lost No Signal",
+          "file": "icons-v2/link-lost-no-signal.svg"
+        },
+        {
+          "slug": "run",
+          "label": "Run",
+          "file": "icons-v2/run.svg"
+        },
+        {
+          "slug": "stop",
+          "label": "Stop",
+          "file": "icons-v2/stop.svg"
+        },
+        {
+          "slug": "pause",
+          "label": "Pause",
+          "file": "icons-v2/pause.svg"
+        },
+        {
+          "slug": "record",
+          "label": "Record",
+          "file": "icons-v2/record.svg"
+        },
+        {
+          "slug": "connect",
+          "label": "Connect",
+          "file": "icons-v2/connect.svg"
+        },
+        {
+          "slug": "disconnect",
+          "label": "Disconnect",
+          "file": "icons-v2/disconnect.svg"
+        },
+        {
+          "slug": "scan-network",
+          "label": "Scan Network",
+          "file": "icons-v2/scan-network.svg"
+        },
+        {
+          "slug": "upload",
+          "label": "Upload",
+          "file": "icons-v2/upload.svg"
+        },
+        {
+          "slug": "download",
+          "label": "Download",
+          "file": "icons-v2/download.svg"
+        },
+        {
+          "slug": "save",
+          "label": "Save",
+          "file": "icons-v2/save.svg"
+        },
+        {
+          "slug": "refresh",
+          "label": "Refresh",
+          "file": "icons-v2/refresh.svg"
+        },
+        {
+          "slug": "settings",
+          "label": "Settings",
+          "file": "icons-v2/settings.svg"
+        },
+        {
+          "slug": "add-panel",
+          "label": "Add Panel",
+          "file": "icons-v2/add-panel.svg"
+        },
+        {
+          "slug": "layout-split",
+          "label": "Layout Split",
+          "file": "icons-v2/layout-split.svg"
+        },
+        {
+          "slug": "fit-zoom",
+          "label": "Fit Zoom",
+          "file": "icons-v2/fit-zoom.svg"
+        },
+        {
+          "slug": "breakpoint",
+          "label": "Breakpoint",
+          "file": "icons-v2/breakpoint.svg"
+        },
+        {
+          "slug": "step-over-f10",
+          "label": "Step Over F10",
+          "file": "icons-v2/step-over-f10.svg"
+        },
+        {
+          "slug": "step-into-f11",
+          "label": "Step Into F11",
+          "file": "icons-v2/step-into-f11.svg"
+        },
+        {
+          "slug": "trigger-pulse",
+          "label": "Trigger Pulse",
+          "file": "icons-v2/trigger-pulse.svg"
+        },
+        {
+          "slug": "export",
+          "label": "Export",
+          "file": "icons-v2/export.svg"
+        },
+        {
+          "slug": "trig-level",
+          "label": "Trig Level",
+          "file": "icons-v2/trig-level.svg"
+        },
+        {
+          "slug": "rms-value",
+          "label": "RMS Value",
+          "file": "icons-v2/rms-value.svg"
+        },
+        {
+          "slug": "peak-hold",
+          "label": "Peak Hold",
+          "file": "icons-v2/peak-hold.svg"
+        },
+        {
+          "slug": "min-max-range",
+          "label": "Min/Max Range",
+          "file": "icons-v2/min-max-range.svg"
+        },
+        {
+          "slug": "encoder-qep",
+          "label": "Encoder QEP",
+          "file": "icons-v2/encoder-qep.svg"
+        }
+      ]
+    }
+  ]
+}

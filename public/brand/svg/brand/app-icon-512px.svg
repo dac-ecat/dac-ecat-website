@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+      <defs>
+        <radialGradient id="ic512bg" cx="50%" cy="50%" r="60%">
+          <stop offset="0%"   stop-color="#0d1e30"/>
+          <stop offset="100%" stop-color="#040810"/>
+        </radialGradient>
+        <filter id="icGlow">
+          <feGaussianBlur stdDeviation="4" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+        <linearGradient id="icGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#00e5c8"/>
+          <stop offset="100%" stop-color="#0088ff"/>
+        </linearGradient>
+      </defs>
+      <!-- Rounded square bg -->
+      <rect rx="100" fill="url(#ic512bg)"/>
+      <!-- Subtle ring texture -->
+      <circle cx="256" cy="256" r="200" fill="none" stroke="#0d2535" stroke-width="1" stroke-dasharray="4,6"/>
+      <circle cx="256" cy="256" r="220" fill="none" stroke="#0d2535" stroke-width="0.5" stroke-dasharray="2,8"/>
+      <!-- EtherCAT outer ring -->
+      <circle cx="256" cy="256" r="185" fill="none" stroke="url(#icGrad)" stroke-width="3" stroke-dasharray="12,8" opacity="0.5" filter="url(#icGlow)"/>
+      <!-- Ring nodes -->
+      <circle cx="256" cy="71"  r="8" fill="#00e5c8" filter="url(#icGlow)"/>
+      <circle cx="441" cy="256" r="8" fill="#00e5c8" filter="url(#icGlow)"/>
+      <circle cx="256" cy="441" r="8" fill="#ffaa00" filter="url(#icGlow)"/>
+      <circle cx="71"  cy="256" r="8" fill="#00e5c8" filter="url(#icGlow)"/>
+      <!-- Face -->
+      <ellipse cx="256" cy="270" rx="130" ry="122" fill="#070f1a" stroke="#0d2535" stroke-width="2"/>
+      <!-- Left ear -->
+      <polygon points="170,170 140,80 220,148" fill="#070f1a" stroke="#00e5c8" stroke-width="2.5"/>
+      <polygon points="172,162 155,102 210,150" fill="#00e5c8" opacity="0.1"/>
+      <circle cx="140" cy="80" r="7" fill="#00e5c8" filter="url(#icGlow)"/>
+      <!-- Right ear -->
+      <polygon points="342,170 372,80 292,148" fill="#070f1a" stroke="#00e5c8" stroke-width="2.5"/>
+      <polygon points="340,162 357,102 302,150" fill="#00e5c8" opacity="0.1"/>
+      <circle cx="372" cy="80" r="7" fill="#00e5c8" filter="url(#icGlow)"/>
+      <!-- Left eye -->
+      <circle cx="210" cy="250" r="32" fill="#040c18" stroke="#00e5c8" stroke-width="2.5"/>
+      <circle cx="210" cy="250" r="22" fill="none" stroke="#00e5c8" stroke-width="1" opacity="0.35" stroke-dasharray="5,4"/>
+      <ellipse cx="210" cy="250" rx="14" ry="18" fill="#001828"/>
+      <ellipse cx="210" cy="250" rx="5"  ry="14" fill="#00e5c8" opacity="0.9" filter="url(#icGlow)"/>
+      <circle cx="218" cy="242" r="5" fill="white" opacity="0.4"/>
+      <circle cx="232" cy="250" r="4" fill="#00e5c8" filter="url(#icGlow)"/>
+      <circle cx="188" cy="250" r="4" fill="#00e5c8" filter="url(#icGlow)"/>
+      <circle cx="210" cy="228" r="4" fill="#ffaa00" filter="url(#icGlow)"/>
+      <!-- Right eye -->
+      <circle cx="302" cy="250" r="32" fill="#040c18" stroke="#00e5c8" stroke-width="2.5"/>
+      <circle cx="302" cy="250" r="22" fill="none" stroke="#00e5c8" stroke-width="1" opacity="0.35" stroke-dasharray="5,4"/>
+      <ellipse cx="302" cy="250" rx="14" ry="18" fill="#001828"/>
+      <ellipse cx="302" cy="250" rx="5"  ry="14" fill="#00e5c8" opacity="0.9" filter="url(#icGlow)"/>
+      <circle cx="310" cy="242" r="5" fill="white" opacity="0.4"/>
+      <circle cx="324" cy="250" r="4" fill="#00e5c8" filter="url(#icGlow)"/>
+      <circle cx="280" cy="250" r="4" fill="#00e5c8" filter="url(#icGlow)"/>
+      <circle cx="302" cy="228" r="4" fill="#ffaa00" filter="url(#icGlow)"/>
+      <!-- Nose -->
+      <polygon points="256,290 242,308 256,322 270,308" fill="#ffaa00" opacity="0.9" filter="url(#icGlow)"/>
+      <!-- Mouth -->
+      <path d="M 236,336 Q 248,354 256,346 Q 264,354 276,336" fill="none" stroke="#00e5c8" stroke-width="2" opacity="0.55"/>
+      <!-- Whiskers -->
+      <g stroke="#00e5c8" stroke-width="1.2" opacity="0.45">
+        <line x1="230" y1="305" x2="120" y2="292"/>
+        <line x1="228" y1="316" x2="118" y2="320"/>
+        <line x1="282" y1="305" x2="392" y2="292"/>
+        <line x1="284" y1="316" x2="394" y2="320"/>
+      </g>
+      <circle cx="120" cy="292" r="4" fill="#00e5c8" opacity="0.6"/>
+      <circle cx="118" cy="320" r="4" fill="#00e5c8" opacity="0.6"/>
+      <circle cx="392" cy="292" r="4" fill="#00e5c8" opacity="0.6"/>
+      <circle cx="394" cy="320" r="4" fill="#00e5c8" opacity="0.6"/>
+    </svg>

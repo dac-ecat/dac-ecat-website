@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect x="3" y="2" rx="2" fill="#0d1e30" stroke="#3b9eff" stroke-width="1.2"/>
+  <polygon points="23,2 29,8 23,8" fill="#3b9eff" opacity="0.4"/>
+  <polygon points="23,2 29,8 23,8" fill="none" stroke="#3b9eff" stroke-width="1"/>
+  <polygon points="8,4 6,8 10,8"   fill="#3b9eff" opacity="0.7"/>
+  <polygon points="14,4 12,8 16,8" fill="#3b9eff" opacity="0.7"/>
+  <ellipse cx="13" cy="18" rx="5" ry="4.5" fill="none" stroke="#3b9eff" stroke-width="1" opacity="0.6"/>
+  <ellipse cx="11" cy="17" rx="1.2" ry="1.8" fill="#3b9eff" opacity="0.8"/>
+  <ellipse cx="15" cy="17" rx="1.2" ry="1.8" fill="#3b9eff" opacity="0.8"/>
+  <polygon points="13,20 11.5,22.5 13,24.5 14.5,22.5" fill="#ffaa00" opacity="0.8"/>
+  <text x="16" y="30" text-anchor="middle" font-family="DM Mono,monospace" font-size="5" fill="#3b9eff">DACAT</text>
+</svg>

@@ -1,0 +1,9 @@
+<svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+  <rect x="1" y="1" rx="2" fill="#091828" stroke="#f5e642" stroke-width="1.1"/>
+  <!-- quadrature pulse A/B -->
+  <polyline points="4,14 8,14 8,8 14,8 14,14 20,14 20,8 26,8 26,14 32,14" fill="none" stroke="#f5e642" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+  <polyline points="4,24 6,24 6,18 12,18 12,24 18,24 18,18 24,18 24,24 30,24 30,18" fill="none" stroke="#ff7a35" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round" opacity="0.7"/>
+  <text x="3" y="13" font-family="DM Mono,monospace" font-size="3" fill="#f5e642" opacity="0.5">A</text>
+  <text x="3" y="23" font-family="DM Mono,monospace" font-size="3" fill="#ff7a35" opacity="0.5">B</text>
+  <text x="18" y="33" text-anchor="middle" font-family="DM Mono,monospace" font-size="4" fill="#f5e642" opacity="0.5">ENC</text>
+</svg>

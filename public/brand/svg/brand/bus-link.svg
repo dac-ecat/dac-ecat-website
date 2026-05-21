@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+      <!-- Two nodes connected by ring segment -->
+      <circle cx="12" cy="24" r="8"  fill="#040c18" stroke="#00e5c8" stroke-width="1.5"/>
+      <circle cx="36" cy="24" r="8"  fill="#040c18" stroke="#00e5c8" stroke-width="1.5"/>
+      <circle cx="12" cy="24" r="3"  fill="#00e5c8"/>
+      <circle cx="36" cy="24" r="3"  fill="#00e5c8"/>
+      <!-- Bus line -->
+      <line x1="20" y1="24" x2="28" y2="24" stroke="#00e5c8" stroke-width="2"/>
+      <!-- Data pulse dots -->
+      <circle cx="24" cy="24" r="2.5" fill="#ffaa00"/>
+      <!-- Arrowheads -->
+      <polygon points="28,21 34,24 28,27" fill="#00e5c8" opacity="0.6"/>
+    </svg>

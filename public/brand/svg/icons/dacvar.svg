@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect x="3" y="2" rx="2" fill="#0d1e30" stroke="#f5e642" stroke-width="1.2"/>
+  <polygon points="23,2 29,8 23,8" fill="#f5e642" opacity="0.3"/>
+  <polygon points="23,2 29,8 23,8" fill="none" stroke="#f5e642" stroke-width="1"/>
+  <!-- Variable symbol: italic x -->
+  <text x="13" y="22" text-anchor="middle" font-family="DM Mono,monospace" font-size="13" font-style="italic" fill="#f5e642" opacity="0.9">x</text>
+  <!-- small node dots -->
+  <circle cx="7"  cy="10" r="1.5" fill="#f5e642" opacity="0.5"/>
+  <circle cx="19" cy="10" r="1.5" fill="#f5e642" opacity="0.5"/>
+  <line x1="8.5" y1="10" x2="17.5" y2="10" stroke="#f5e642" stroke-width="0.8" opacity="0.3"/>
+  <text x="16" y="30" text-anchor="middle" font-family="DM Mono,monospace" font-size="4.5" fill="#f5e642">DACVAR</text>
+</svg>

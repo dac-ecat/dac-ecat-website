@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 60">
+      <defs>
+        <style>
+          .march { stroke-dasharray: 10,8; animation: march 1s linear infinite; }
+          @keyframes march { to { stroke-dashoffset: -18; } }
+        </style>
+        <linearGradient id="pgBar" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%"   stop-color="#00e5c8"/>
+          <stop offset="100%" stop-color="#0088ff"/>
+        </linearGradient>
+        <filter id="pgGlow"><feGaussianBlur stdDeviation="2" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+      <!-- Track -->
+      <rect x="10" y="26" rx="1" fill="#0d1a28" stroke="#1a2535" stroke-width="1"/>
+      <!-- Fill (68%) -->
+      <rect x="10" y="26" rx="1" fill="url(#pgBar)" filter="url(#pgGlow)" opacity="0.85"/>
+      <!-- Marching ants on top -->
+      <line x1="10" y1="30" x2="187" y2="30" stroke="white" stroke-width="1" opacity="0.2" class="march"/>
+      <!-- Node dots along track -->
+      <circle cx="10"  cy="30" r="4" fill="#00e5c8" filter="url(#pgGlow)"/>
+      <circle cx="75"  cy="30" r="3" fill="#00e5c8" opacity="0.6"/>
+      <circle cx="140" cy="30" r="3" fill="#0088ff" opacity="0.6"/>
+      <circle cx="187" cy="30" r="5" fill="#00e5c8" filter="url(#pgGlow)"/>
+      <circle cx="270" cy="30" r="4" fill="#1a2535"/>
+      <circle cx="270" cy="30" r="2" fill="#1a3545"/>
+      <!-- Label -->
+      <text x="10"  y="18" font-family="DM Mono, monospace" font-size="7" fill="#2a4a60" letter-spacing="2">INITIALIZING ECAT BUS</text>
+      <text x="270" y="18" text-anchor="end" font-family="DM Mono, monospace" font-size="7" fill="#00e5c8" letter-spacing="1">68%</text>
+    </svg>

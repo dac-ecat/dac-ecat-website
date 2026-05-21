@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect x="3" y="2" rx="2" fill="#0d1e30" stroke="#3ddc84" stroke-width="1.2"/>
+  <polygon points="23,2 29,8 23,8" fill="#3ddc84" opacity="0.3"/>
+  <polygon points="23,2 29,8 23,8" fill="none" stroke="#3ddc84" stroke-width="1"/>
+  <!-- table grid lines -->
+  <line x1="6" y1="11" x2="20" y2="11" stroke="#3ddc84" stroke-width="0.8" opacity="0.6"/>
+  <line x1="6" y1="15" x2="20" y2="15" stroke="#3ddc84" stroke-width="0.8" opacity="0.4"/>
+  <line x1="6" y1="19" x2="20" y2="19" stroke="#3ddc84" stroke-width="0.8" opacity="0.4"/>
+  <line x1="6" y1="23" x2="20" y2="23" stroke="#3ddc84" stroke-width="0.8" opacity="0.4"/>
+  <line x1="12" y1="9" x2="12" y2="24" stroke="#3ddc84" stroke-width="0.8" opacity="0.4"/>
+  <!-- header highlight -->
+  <rect x="6" y="9" rx="0.5" fill="#3ddc84" opacity="0.15"/>
+  <text x="16" y="30" text-anchor="middle" font-family="DM Mono,monospace" font-size="5.5" fill="#3ddc84">CSV</text>
+</svg>

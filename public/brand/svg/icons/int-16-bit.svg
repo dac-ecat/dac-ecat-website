@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
+  <rect x="1" y="1" rx="3" fill="#091828" stroke="#3b9eff" stroke-width="1.2"/>
+  <text x="14" y="19" text-anchor="middle" font-family="DM Mono,monospace" font-size="10" font-weight="bold" fill="#3b9eff">I</text>
+  <!-- corner decoration -->
+  <rect x="1"  y="1"  fill="#3b9eff" opacity="0.4" rx="1"/>
+  <rect x="22" y="25.5" fill="#3b9eff" opacity="0.4" rx="1"/>
+</svg>

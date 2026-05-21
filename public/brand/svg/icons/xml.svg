@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect x="3" y="2" rx="2" fill="#0d1e30" stroke="#3b9eff" stroke-width="1.2"/>
+  <polygon points="23,2 29,8 23,8" fill="#3b9eff" opacity="0.3"/>
+  <polygon points="23,2 29,8 23,8" fill="none" stroke="#3b9eff" stroke-width="1"/>
+  <!-- < > brackets -->
+  <text x="6"  y="21" font-family="DM Mono,monospace" font-size="13" fill="#3b9eff" opacity="0.9">&lt;</text>
+  <text x="17" y="21" font-family="DM Mono,monospace" font-size="13" fill="#3b9eff" opacity="0.9">&gt;</text>
+  <text x="16" y="30" text-anchor="middle" font-family="DM Mono,monospace" font-size="5.5" fill="#3b9eff">XML</text>
+</svg>

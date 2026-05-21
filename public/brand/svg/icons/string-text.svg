@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
+  <rect x="1" y="1" rx="3" fill="#091828" stroke="#f5e642" stroke-width="1.2"/>
+  <!-- Quotation marks -->
+  <text x="7"  y="18" font-family="DM Mono,monospace" font-size="14" fill="#f5e642" opacity="0.85">"</text>
+  <text x="16" y="18" font-family="DM Mono,monospace" font-size="14" fill="#f5e642" opacity="0.85">"</text>
+  <!-- text lines between -->
+  <line x1="9" y1="13" x2="19" y2="13" stroke="#f5e642" stroke-width="0.8" opacity="0.3"/>
+  <rect x="1" y="1" fill="#f5e642" opacity="0.4" rx="1"/>
+  <rect x="22" y="25.5" fill="#f5e642" opacity="0.4" rx="1"/>
+</svg>

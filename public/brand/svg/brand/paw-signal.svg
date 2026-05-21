@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+      <!-- Paw print with network nodes as toes -->
+      <!-- Main pad -->
+      <ellipse cx="24" cy="30" rx="11" ry="9" fill="#040c18" stroke="#00e5c8" stroke-width="1.5"/>
+      <ellipse cx="24" cy="30" rx="11" ry="9" fill="none" stroke="#00e5c8" stroke-width="1.5"/>
+      <!-- Toe pads as EtherCAT nodes -->
+      <circle cx="13" cy="18" r="5" fill="#040c18" stroke="#00e5c8" stroke-width="1.5"/>
+      <circle cx="24" cy="14" r="5" fill="#040c18" stroke="#00e5c8" stroke-width="1.5"/>
+      <circle cx="35" cy="18" r="5" fill="#040c18" stroke="#00e5c8" stroke-width="1.5"/>
+      <!-- Node centers -->
+      <circle cx="13" cy="18" r="2" fill="#00e5c8"/>
+      <circle cx="24" cy="14" r="2" fill="#ffaa00"/>
+      <circle cx="35" cy="18" r="2" fill="#00e5c8"/>
+      <!-- Center pad mark -->
+      <ellipse cx="24" cy="30" rx="5" ry="4" fill="#00e5c8" opacity="0.15"/>
+      <circle  cx="24" cy="30" r="2" fill="#00e5c8" opacity="0.6"/>
+    </svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 60">
+      <defs>
+        <style>.sw text { font-family: "DM Mono", monospace; }</style>
+      </defs>
+      <g class="sw">
+        <!-- Swatch 1 -->
+        <rect x="0"   y="0" rx="2" fill="#00e5c8"/>
+        <text x="34"  y="54" text-anchor="middle" font-size="8" fill="#2a4a60">#00E5C8</text>
+        <text x="34"  y="64" text-anchor="middle" font-size="7" fill="#1a3040">Primary</text>
+        <!-- Swatch 2 -->
+        <rect x="80"  y="0" rx="2" fill="#0088ff"/>
+        <text x="114" y="54" text-anchor="middle" font-size="8" fill="#2a4a60">#0088FF</text>
+        <text x="114" y="64" text-anchor="middle" font-size="7" fill="#1a3040">Network</text>
+        <!-- Swatch 3 -->
+        <rect x="160" y="0" rx="2" fill="#ffaa00"/>
+        <text x="194" y="54" text-anchor="middle" font-size="8" fill="#2a4a60">#FFAA00</text>
+        <text x="194" y="64" text-anchor="middle" font-size="7" fill="#1a3040">Amber / Nose</text>
+        <!-- Swatch 4 -->
+        <rect x="240" y="0" rx="2" fill="#ff4455"/>
+        <text x="274" y="54" text-anchor="middle" font-size="8" fill="#2a4a60">#FF4455</text>
+        <text x="274" y="64" text-anchor="middle" font-size="7" fill="#1a3040">Error</text>
+        <!-- Swatch 5 -->
+        <rect x="320" y="0" rx="2" fill="#0d1218"/>
+        <rect x="320" y="0" rx="2" fill="none" stroke="#1a2535" stroke-width="1"/>
+        <text x="354" y="54" text-anchor="middle" font-size="8" fill="#2a4a60">#0D1218</text>
+        <text x="354" y="64" text-anchor="middle" font-size="7" fill="#1a3040">Surface</text>
+        <!-- Swatch 6 -->
+        <rect x="400" y="0" rx="2" fill="#1a2535"/>
+        <text x="434" y="54" text-anchor="middle" font-size="8" fill="#2a4a60">#1A2535</text>
+        <text x="434" y="64" text-anchor="middle" font-size="7" fill="#1a3040">Border</text>
+        <!-- Swatch 7 -->
+        <rect x="480" y="0" rx="2" fill="#7a9bb5"/>
+        <text x="514" y="54" text-anchor="middle" font-size="8" fill="#2a4a60">#7A9BB5</text>
+        <text x="514" y="64" text-anchor="middle" font-size="7" fill="#1a3040">Text</text>
+      </g>
+    </svg>

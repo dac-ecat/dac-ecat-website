@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect x="3" y="2" rx="2" fill="#0d1e30" stroke="#ff6eb4" stroke-width="1.2"/>
+  <polygon points="23,2 29,8 23,8" fill="#ff6eb4" opacity="0.3"/>
+  <polygon points="23,2 29,8 23,8" fill="none" stroke="#ff6eb4" stroke-width="1"/>
+  <!-- cursor arrow -->
+  <polygon points="8,9 8,22 11,19 13,24 15,23 13,18 17,18" fill="#ff6eb4" opacity="0.85"/>
+  <text x="16" y="30" text-anchor="middle" font-family="DM Mono,monospace" font-size="4.5" fill="#ff6eb4">CURSOR</text>
+</svg>

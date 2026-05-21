@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #080b0f;
+  color: #7a9bb5;
+  font-family: var(--font-dm-mono), 'Courier New', monospace;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Gradient text */
+.text-gradient-brand {
+  background: linear-gradient(90deg, #00e5c8 0%, #60d0ff 55%, #ffaa00 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-teal-blue {
+  background: linear-gradient(135deg, #00e5c8 0%, #0088ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* CRT scanline overlay for hero */
+.scanlines::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    to bottom,
+    transparent 0px,
+    transparent 3px,
+    rgba(0, 0, 0, 0.025) 3px,
+    rgba(0, 0, 0, 0.025) 4px
+  );
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #080b0f; }
+::-webkit-scrollbar-thumb { background: #1a2535; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #243650; }
+
+/* Selection */
+::selection { background: rgba(0, 229, 200, 0.2); color: #d0e8f0; }

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
+  <rect x="1" y="1" rx="3" fill="#091828" stroke="#ffaa00" stroke-width="1.2"/>
+  <!-- 16 bit cells in 2 rows -->
+  <rect x="3"  y="8"  rx="0.3" fill="#ffaa00" opacity="0.8"/>
+  <rect x="7"  y="8"  rx="0.3" fill="#ffaa00" opacity="0.2"/>
+  <rect x="11" y="8"  rx="0.3" fill="#ffaa00" opacity="0.8"/>
+  <rect x="15" y="8"  rx="0.3" fill="#ffaa00" opacity="0.8"/>
+  <rect x="19" y="8"  rx="0.3" fill="#ffaa00" opacity="0.2"/>
+  <rect x="23" y="8"  rx="0.3" fill="#ffaa00" opacity="0.8"/>
+  <rect x="3"  y="15" rx="0.3" fill="#ffaa00" opacity="0.2"/>
+  <rect x="7"  y="15" rx="0.3" fill="#ffaa00" opacity="0.8"/>
+  <rect x="11" y="15" rx="0.3" fill="#ffaa00" opacity="0.2"/>
+  <rect x="15" y="15" rx="0.3" fill="#ffaa00" opacity="0.8"/>
+  <rect x="19" y="15" rx="0.3" fill="#ffaa00" opacity="0.8"/>
+  <rect x="23" y="15" rx="0.3" fill="#ffaa00" opacity="0.2"/>
+  <rect x="1"  y="1"  fill="#ffaa00" opacity="0.4" rx="1"/>
+</svg>

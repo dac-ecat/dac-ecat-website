@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect x="3" y="2" rx="2" fill="#0d1e30" stroke="#3ddc84" stroke-width="1.2"/>
+  <polygon points="23,2 29,8 23,8" fill="#3ddc84" opacity="0.3"/>
+  <polygon points="23,2 29,8 23,8" fill="none" stroke="#3ddc84" stroke-width="1"/>
+  <!-- Python snake-like S -->
+  <path d="M 8,11 Q 8,8 12,8 Q 16,8 16,11 Q 16,14 12,14 Q 8,14 8,17 Q 8,20 12,20 Q 16,20 16,17" fill="none" stroke="#3ddc84" stroke-width="1.5"/>
+  <circle cx="8"  cy="11" r="1.5" fill="#3ddc84"/>
+  <circle cx="16" cy="17" r="1.5" fill="#ffaa00"/>
+  <text x="16" y="30" text-anchor="middle" font-family="DM Mono,monospace" font-size="5.5" fill="#3ddc84">.py</text>
+</svg>

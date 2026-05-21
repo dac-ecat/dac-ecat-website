@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<title>DAC-ECAT — Brand Assets</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:     #080b0f;
+  --bg2:    #0d1218;
+  --border: #1a2535;
+  --teal:   #00e5c8;
+  --amber:  #ffaa00;
+  --blue:   #0088ff;
+  --dim:    #2a3f55;
+  --text:   #7a9bb5;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'DM Mono', monospace;
+  padding: 40px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: 'Orbitron', monospace;
+  font-weight: 900;
+  font-size: 1.1rem;
+  letter-spacing: 0.3em;
+  color: var(--teal);
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  color: var(--dim);
+  text-transform: uppercase;
+  margin-bottom: 48px;
+}
+
+.section-label {
+  font-size: 0.58rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--dim);
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.row {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+  align-items: flex-start;
+}
+
+.asset-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  gap: 12px;
+  position: relative;
+}
+
+.asset-card .label {
+  font-size: 0.58rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--dim);
+  text-align: center;
+}
+
+/* corner marks */
+.asset-card::before, .asset-card::after {
+  content: '';
+  position: absolute;
+  width: 8px; height: 8px;
+}
+.asset-card::before { top:-1px; left:-1px; border-top:1px solid var(--teal); border-left:1px solid var(--teal); }
+.asset-card::after  { bottom:-1px; right:-1px; border-bottom:1px solid var(--teal); border-right:1px solid var(--teal); }
+
+/* Checkerboard for transparency demo */
+.on-light { background: #f0f4f8; }
+.on-white { background: #ffffff; }
+
+/* ── SPLASH SCREEN ── */
+.splash-wrap {
+  width: 100%;
+  margin-bottom: 48px;
+  position: relative;
+  overflow: hidden;
+}
+
+.splash-label {
+  font-size: 0.58rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--dim);
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+</style>
+</head>
+<body>
+
+<h1>DAC-ECAT</h1>
+<div class="subtitle">Brand Asset System · SVG Collection · v1.0</div>
+
+<!-- ═══════════════════════════════════════════════════
+     SPLASH SCREEN
+════════════════════════════════════════════════════ -->
+<div class="splash-label">// Splash Screen — 800×500</div>
+<div class="splash-wrap">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%"
+     style="display:block; border:1px solid #1a2535;">
+  <defs>
+    <radialGradient id="splashBg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%"   stop-color="#0d1a28"/>
+      <stop offset="100%" stop-color="#040608"/>
+    </radialGradient>
+    <radialGradient id="glowTeal" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#00e5c8" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#00e5c8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowAmber" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#ffaa00" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#ffaa00" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow4" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow8" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#00e5c8"/>
+      <stop offset="50%"  stop-color="#0088ff"/>
+      <stop offset="100%" stop-color="#00e5c8" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#00e5c8"/>
+      <stop offset="60%"  stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#ffaa00"/>
+    </linearGradient>
+    <clipPath id="catClip">
+      <circle cx="400" cy="220" r="115"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#splashBg)"/>
+
+  <!-- Grid lines -->
+  <g stroke="#0d2030" stroke-width="0.5" opacity="0.6">
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="100" y1="0" x2="100" y2="500"/>
+    <line x1="200" y1="0" x2="200" y2="500"/>
+    <line x1="300" y1="0" x2="300" y2="500"/>
+    <line x1="400" y1="0" x2="400" y2="500"/>
+    <line x1="500" y1="0" x2="500" y2="500"/>
+    <line x1="600" y1="0" x2="600" y2="500"/>
+    <line x1="700" y1="0" x2="700" y2="500"/>
+  </g>
+
+  <!-- Ambient glows -->
+  <ellipse cx="400" cy="220" rx="200" ry="180" fill="url(#glowTeal)"/>
+  <ellipse cx="400" cy="350" rx="250" ry="80"  fill="url(#glowAmber)"/>
+
+  <!-- ── EtherCAT ring segments (outer decoration) ── -->
+  <!-- Large outer ring arc segments -->
+  <g filter="url(#glow2)" opacity="0.5">
+    <path d="M 240 80 A 180 180 0 0 1 560 80" fill="none" stroke="#00e5c8" stroke-width="1" stroke-dasharray="8,6"/>
+    <path d="M 220 100 A 200 200 0 0 0 580 100" fill="none" stroke="#0088ff" stroke-width="0.5" stroke-dasharray="4,10"/>
+  </g>
+
+  <!-- Network topology lines radiating outward -->
+  <g stroke="#00e5c8" stroke-width="0.75" opacity="0.3">
+    <line x1="400" y1="105" x2="310" y2="48"/>
+    <line x1="400" y1="105" x2="490" y2="48"/>
+    <line x1="310" y1="48" x2="250" y2="30"/>
+    <line x1="490" y1="48" x2="550" y2="30"/>
+    <line x1="285" y1="220" x2="220" y2="180"/>
+    <line x1="515" y1="220" x2="580" y2="180"/>
+    <line x1="220" y1="180" x2="170" y2="150"/>
+    <line x1="580" y1="180" x2="630" y2="150"/>
+  </g>
+
+  <!-- Network nodes -->
+  <g filter="url(#glow4)">
+    <circle cx="310" cy="48"  r="4" fill="#00e5c8"/>
+    <circle cx="490" cy="48"  r="4" fill="#00e5c8"/>
+    <circle cx="250" cy="30"  r="3" fill="#0088ff"/>
+    <circle cx="550" cy="30"  r="3" fill="#0088ff"/>
+    <circle cx="220" cy="180" r="3" fill="#00e5c8"/>
+    <circle cx="580" cy="180" r="3" fill="#00e5c8"/>
+    <circle cx="170" cy="150" r="2.5" fill="#ffaa00" opacity="0.7"/>
+    <circle cx="630" cy="150" r="2.5" fill="#ffaa00" opacity="0.7"/>
+  </g>
+
+  <!-- ══════════════════════════════
+       MAIN CAT LOGO — center
+  ══════════════════════════════ -->
+  <g transform="translate(400,220)">
+
+    <!-- Outer glow ring -->
+    <circle r="118" fill="none" stroke="url(#ringGrad)" stroke-width="1.5" opacity="0.4"
+            stroke-dasharray="6,3" filter="url(#glow2)"/>
+    <circle r="124" fill="none" stroke="#00e5c8" stroke-width="0.5" opacity="0.15"/>
+
+    <!-- Face base -->
+    <ellipse rx="95" ry="90" fill="#0a141e" stroke="#162030" stroke-width="1"/>
+
+    <!-- ── EtherCAT ring topology inside face (ring network symbol) ── -->
+    <g opacity="0.18" stroke="#00e5c8" stroke-width="1" fill="none">
+      <circle r="60" stroke-dasharray="3,4"/>
+      <circle r="72" stroke-dasharray="2,6"/>
+    </g>
+
+    <!-- ── LEFT EAR — hexagonal EtherCAT node ── -->
+    <g transform="translate(-52,-78)">
+      <!-- Ear triangle base -->
+      <polygon points="0,-38 -28,8 28,8" fill="#0a141e" stroke="#00e5c8" stroke-width="1.5"/>
+      <!-- Inner ear fill -->
+      <polygon points="0,-26 -17,4 17,4" fill="#00e5c8" opacity="0.12"/>
+      <!-- Node dot at tip -->
+      <circle cy="-38" r="4" fill="#00e5c8" filter="url(#glow4)"/>
+      <!-- Ring segment on ear -->
+      <path d="M -14,-18 A 22 22 0 0 1 14,-18" fill="none" stroke="#00e5c8" stroke-width="1" opacity="0.5" stroke-dasharray="3,3"/>
+      <!-- EtherCAT tick marks -->
+      <line x1="-10" y1="-8" x2="-14" y2="-14" stroke="#00e5c8" stroke-width="0.75" opacity="0.6"/>
+      <line x1="10"  y1="-8" x2="14"  y2="-14" stroke="#00e5c8" stroke-width="0.75" opacity="0.6"/>
+    </g>
+
+    <!-- ── RIGHT EAR — hexagonal EtherCAT node ── -->
+    <g transform="translate(52,-78)">
+      <polygon points="0,-38 -28,8 28,8" fill="#0a141e" stroke="#00e5c8" stroke-width="1.5"/>
+      <polygon points="0,-26 -17,4 17,4" fill="#00e5c8" opacity="0.12"/>
+      <circle cy="-38" r="4" fill="#00e5c8" filter="url(#glow4)"/>
+      <path d="M -14,-18 A 22 22 0 0 1 14,-18" fill="none" stroke="#00e5c8" stroke-width="1" opacity="0.5" stroke-dasharray="3,3"/>
+      <line x1="-10" y1="-8" x2="-14" y2="-14" stroke="#00e5c8" stroke-width="0.75" opacity="0.6"/>
+      <line x1="10"  y1="-8" x2="14"  y2="-14" stroke="#00e5c8" stroke-width="0.75" opacity="0.6"/>
+    </g>
+
+    <!-- ── LEFT EYE — EtherCAT ring node ── -->
+    <g transform="translate(-32,-12)">
+      <!-- Eye socket -->
+      <circle r="20" fill="#060e18" stroke="#00e5c8" stroke-width="1.5"/>
+      <!-- Ring inside eye — the EtherCAT ring topology symbol -->
+      <circle r="13" fill="none" stroke="#00e5c8" stroke-width="1" opacity="0.4" stroke-dasharray="4,3"/>
+      <!-- Iris -->
+      <ellipse rx="9" ry="11" fill="#001a2e"/>
+      <!-- Iris ring -->
+      <ellipse rx="9" ry="11" fill="none" stroke="#00e5c8" stroke-width="1" opacity="0.6"/>
+      <!-- Pupil — vertical slit (cat!) -->
+      <ellipse rx="3" ry="8" fill="#00e5c8" opacity="0.9" filter="url(#glow4)"/>
+      <!-- Highlight -->
+      <circle cx="4" cy="-4" r="2.5" fill="white" opacity="0.5"/>
+      <!-- Network node dots on eye ring -->
+      <circle cx="13"  cy="0"  r="2" fill="#00e5c8" filter="url(#glow4)"/>
+      <circle cx="-13" cy="0"  r="2" fill="#00e5c8" filter="url(#glow4)"/>
+      <circle cx="0"   cy="-13" r="2" fill="#ffaa00" filter="url(#glow4)"/>
+    </g>
+
+    <!-- ── RIGHT EYE — EtherCAT ring node ── -->
+    <g transform="translate(32,-12)">
+      <circle r="20" fill="#060e18" stroke="#00e5c8" stroke-width="1.5"/>
+      <circle r="13" fill="none" stroke="#00e5c8" stroke-width="1" opacity="0.4" stroke-dasharray="4,3"/>
+      <ellipse rx="9" ry="11" fill="#001a2e"/>
+      <ellipse rx="9" ry="11" fill="none" stroke="#00e5c8" stroke-width="1" opacity="0.6"/>
+      <ellipse rx="3" ry="8" fill="#00e5c8" opacity="0.9" filter="url(#glow4)"/>
+      <circle cx="4" cy="-4" r="2.5" fill="white" opacity="0.5"/>
+      <circle cx="13"  cy="0"   r="2" fill="#00e5c8" filter="url(#glow4)"/>
+      <circle cx="-13" cy="0"   r="2" fill="#00e5c8" filter="url(#glow4)"/>
+      <circle cx="0"   cy="-13" r="2" fill="#ffaa00" filter="url(#glow4)"/>
+    </g>
+
+    <!-- ── NOSE — diamond data-node ── -->
+    <polygon points="0,-2 -6,6 0,12 6,6"
+             fill="#ffaa00" opacity="0.85" filter="url(#glow4)"/>
+    <polygon points="0,-2 -6,6 0,12 6,6"
+             fill="none" stroke="#ffaa00" stroke-width="0.5"/>
+
+    <!-- ── WHISKERS — EtherCAT bus lines ── -->
+    <g stroke="#00e5c8" stroke-width="0.75" opacity="0.55">
+      <!-- Left whiskers -->
+      <line x1="-20" y1="10" x2="-82" y2="2"/>
+      <line x1="-20" y1="14" x2="-82" y2="18"/>
+      <line x1="-20" y1="18" x2="-75" y2="32"/>
+      <!-- Right whiskers -->
+      <line x1="20" y1="10" x2="82" y2="2"/>
+      <line x1="20" y1="14" x2="82" y2="18"/>
+      <line x1="20" y1="18" x2="75" y2="32"/>
+    </g>
+    <!-- Whisker end nodes -->
+    <g filter="url(#glow2)" opacity="0.7">
+      <circle cx="-82" cy="2"  r="2" fill="#00e5c8"/>
+      <circle cx="-82" cy="18" r="2" fill="#00e5c8"/>
+      <circle cx="-75" cy="32" r="2" fill="#0088ff"/>
+      <circle cx="82"  cy="2"  r="2" fill="#00e5c8"/>
+      <circle cx="82"  cy="18" r="2" fill="#00e5c8"/>
+      <circle cx="75"  cy="32" r="2" fill="#0088ff"/>
+    </g>
+
+    <!-- ── MOUTH — curved with node points ── -->
+    <path d="M -14,22 Q -7,32 0,26 Q 7,32 14,22"
+          fill="none" stroke="#00e5c8" stroke-width="1.2" opacity="0.6"/>
+    <circle cx="-14" cy="22" r="2" fill="#00e5c8" opacity="0.5"/>
+    <circle cx="14"  cy="22" r="2" fill="#00e5c8" opacity="0.5"/>
+
+    <!-- ── Forehead EtherCAT ring mark ── -->
+    <g transform="translate(0,-55)" opacity="0.5">
+      <circle r="8" fill="none" stroke="#00e5c8" stroke-width="1" stroke-dasharray="3,2"/>
+      <circle cx="8"  cy="0" r="1.5" fill="#00e5c8"/>
+      <circle cx="-8" cy="0" r="1.5" fill="#00e5c8"/>
+      <circle cx="0" cy="-8" r="1.5" fill="#ffaa00"/>
+      <circle cx="0" cy="8"  r="1.5" fill="#ffaa00"/>
+      <line x1="0" y1="-8" x2="0" y2="-18" stroke="#00e5c8" stroke-width="0.75"/>
+    </g>
+
+  </g>
+  <!-- end cat logo -->
+
+  <!-- ══════════════════════════════
+       LOGOTYPE
+  ══════════════════════════════ -->
+  <text x="400" y="372" text-anchor="middle"
+        font-family="Orbitron, monospace" font-weight="900" font-size="38"
+        fill="url(#textGrad)" filter="url(#glow2)" letter-spacing="6">
+    DAC-ECAT
+  </text>
+
+  <!-- Subtitle -->
+  <text x="400" y="395" text-anchor="middle"
+        font-family="DM Mono, monospace" font-size="10" fill="#2a4a60"
+        letter-spacing="5">
+    DISTRIBUTED AUTOMATION CONTROL
+  </text>
+
+  <!-- Version / tagline row -->
+  <g transform="translate(400,426)">
+    <line x1="-110" y1="0" x2="-18" y2="0" stroke="#1a3040" stroke-width="0.75"/>
+    <text x="0" y="4" text-anchor="middle" font-family="DM Mono, monospace"
+          font-size="8" fill="#00e5c8" letter-spacing="3">ECAT</text>
+    <line x1="18" y1="0" x2="110" y2="0" stroke="#1a3040" stroke-width="0.75"/>
+  </g>
+
+  <!-- Corner marks -->
+  <g stroke="#1a3040" stroke-width="1">
+    <path d="M 20,20 L 20,44 M 20,20 L 44,20" fill="none" stroke="#00e5c8" opacity="0.4"/>
+    <path d="M 780,20 L 780,44 M 780,20 L 756,20" fill="none" stroke="#00e5c8" opacity="0.4"/>
+    <path d="M 20,480 L 20,456 M 20,480 L 44,480" fill="none" stroke="#00e5c8" opacity="0.4"/>
+    <path d="M 780,480 L 780,456 M 780,480 L 756,480" fill="none" stroke="#00e5c8" opacity="0.4"/>
+  </g>
+
+  <!-- Build info -->
+  <text x="28" y="488" font-family="DM Mono, monospace" font-size="7" fill="#1a3040" letter-spacing="2">v1.0.0</text>
+  <text x="772" y="488" text-anchor="end" font-family="DM Mono, monospace" font-size="7" fill="#1a3040" letter-spacing="2">DAC-ECAT SYSTEM</text>
+</svg>
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     ICON SET
+════════════════════════════════════════════════════ -->
+<div class="section-label">// Icon Set — App Icons & UI Glyphs</div>
+<div class="row">
+
+  <!-- 512px App Icon -->
+  <div class="asset-card">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="160" height="160">
+      <defs>
+        <radialGradient id="ic512bg" cx="50%" cy="50%" r="60%">
+          <stop offset="0%"   stop-color="#0d1e30"/>
+          <stop offset="100%" stop-color="#040810"/>
+        </radialGradient>
+        <filter id="icGlow">
+          <feGaussianBlur stdDeviation="4" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+        </filter>
+        <linearGradient id="icGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#00e5c8"/>
+          <stop offset="100%" stop-color="#0088ff"/>
+        </linearGradient>
+      </defs>
+      <!-- Rounded square bg -->
+      <rect width="512" height="512" rx="100" fill="url(#ic512bg)"/>
+      <!-- Subtle ring texture -->
+      <circle cx="256" cy="256" r="200" fill="none" stroke="#0d2535" stroke-width="1" stroke-dasharray="4,6"/>
+      <circle cx="256" cy="256" r="220" fill="none" stroke="#0d2535" stroke-width="0.5" stroke-dasharray="2,8"/>
+      <!-- EtherCAT outer ring -->
+      <circle cx="256" cy="256" r="185" fill="none" stroke="url(#icGrad)" stroke-width="3" stroke-dasharray="12,8" opacity="0.5" filter="url(#icGlow)"/>
+      <!-- Ring nodes -->
+      <circle cx="256" cy="71"  r="8" fill="#00e5c8" filter="url(#icGlow)"/>
+      <circle cx="441" cy="256" r="8" fill="#00e5c8" filter="url(#icGlow)"/>
+      <circle cx="256" cy="441" r="8" fill="#ffaa00" filter="url(#icGlow)"/>
+      <circle cx="71"  cy="256" r="8" fill="#00e5c8" filter="url(#icGlow)"/>
+      <!-- Face -->
+      <ellipse cx="256" cy="270" rx="130" ry="122" fill="#070f1a" stroke="#0d2535" stroke-width="2"/>
+      <!-- Left ear -->
+      <polygon points="170,170 140,80 220,148" fill="#070f1a" stroke="#00e5c8" stroke-width="2.5"/>
+      <polygon points="172,162 155,102 210,150" fill="#00e5c8" opacity="0.1"/>
+      <circle cx="140" cy="80" r="7" fill="#00e5c8" filter="url(#icGlow)"/>
+      <!-- Right ear -->
+      <polygon points="342,170 372,80 292,148" fill="#070f1a" stroke="#00e5c8" stroke-width="2.5"/>
+      <polygon points="340,162 357,102 302,150" fill="#00e5c8" opacity="0.1"/>
+      <circle cx="372" cy="80" r="7" fill="#00e5c8" filter="url(#icGlow)"/>
+      <!-- Left eye -->
+      <circle cx="210" cy="250" r="32" fill="#040c18" stroke="#00e5c8" stroke-width="2.5"/>
+      <circle cx="210" cy="250" r="22" fill="none" stroke="#00e5c8" stroke-width="1" opacity="0.35" stroke-dasharray="5,4"/>
+      <ellipse cx="210" cy="250" rx="14" ry="18" fill="#001828"/>
+      <ellipse cx="210" cy="250" rx="5"  ry="14" fill="#00e5c8" opacity="0.9" filter="url(#icGlow)"/>
+      <circle cx="218" cy="242" r="5" fill="white" opacity="0.4"/>
+      <circle cx="232" cy="250" r="4" fill="#00e5c8" filter="url(#icGlow)"/>
+      <circle cx="188" cy="250" r="4" fill="#00e5c8" filter="url(#icGlow)"/>
+      <circle cx="210" cy="228" r="4" fill="#ffaa00" filter="url(#icGlow)"/>
+      <!-- Right eye -->
+      <circle cx="302" cy="250" r="32" fill="#040c18" stroke="#00e5c8" stroke-width="2.5"/>
+      <circle cx="302" cy="250" r="22" fill="none" stroke="#00e5c8" stroke-width="1" opacity="0.35" stroke-dasharray="5,4"/>
+      <ellipse cx="302" cy="250" rx="14" ry="18" fill="#001828"/>
+      <ellipse cx="302" cy="250" rx="5"  ry="14" fill="#00e5c8" opacity="0.9" filter="url(#icGlow)"/>
+      <circle cx="310" cy="242" r="5" fill="white" opacity="0.4"/>
+      <circle cx="324" cy="250" r="4" fill="#00e5c8" filter="url(#icGlow)"/>
+      <circle cx="280" cy="250" r="4" fill="#00e5c8" filter="url(#icGlow)"/>
+      <circle cx="302" cy="228" r="4" fill="#ffaa00" filter="url(#icGlow)"/>
+      <!-- Nose -->
+      <polygon points="256,290 242,308 256,322 270,308" fill="#ffaa00" opacity="0.9" filter="url(#icGlow)"/>
+      <!-- Mouth -->
+      <path d="M 236,336 Q 248,354 256,346 Q 264,354 276,336" fill="none" stroke="#00e5c8" stroke-width="2" opacity="0.55"/>
+      <!-- Whiskers -->
+      <g stroke="#00e5c8" stroke-width="1.2" opacity="0.45">
+        <line x1="230" y1="305" x2="120" y2="292"/>
+        <line x1="228" y1="316" x2="118" y2="320"/>
+        <line x1="282" y1="305" x2="392" y2="292"/>
+        <line x1="284" y1="316" x2="394" y2="320"/>
+      </g>
+      <circle cx="120" cy="292" r="4" fill="#00e5c8" opacity="0.6"/>
+      <circle cx="118" cy="320" r="4" fill="#00e5c8" opacity="0.6"/>
+      <circle cx="392" cy="292" r="4" fill="#00e5c8" opacity="0.6"/>
+      <circle cx="394" cy="320" r="4" fill="#00e5c8" opacity="0.6"/>
+    </svg>
+    <div class="label">App Icon · 512px</div>
+  </div>
+
+  <!-- 128px Icon -->
+  <div class="asset-card">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+      <rect width="128" height="128" rx="24" fill="#070e18"/>
+      <circle cx="64" cy="64" r="46" fill="none" stroke="#00e5c8" stroke-width="1.2" stroke-dasharray="5,4" opacity="0.4"/>
+      <circle cx="64" cy="18" r="4" fill="#00e5c8"/>
+      <circle cx="110" cy="64" r="4" fill="#00e5c8"/>
+      <circle cx="64" cy="110" r="4" fill="#ffaa00"/>
+      <circle cx="18" cy="64" r="4" fill="#00e5c8"/>
+      <ellipse cx="64" cy="68" rx="32" ry="30" fill="#040c18" stroke="#0d2030" stroke-width="1"/>
+      <polygon points="44,44 36,20 56,38" fill="#040c18" stroke="#00e5c8" stroke-width="1.5"/>
+      <circle cx="36" cy="20" r="3" fill="#00e5c8"/>
+      <polygon points="84,44 92,20 72,38" fill="#040c18" stroke="#00e5c8" stroke-width="1.5"/>
+      <circle cx="92" cy="20" r="3" fill="#00e5c8"/>
+      <circle cx="50" cy="62" r="10" fill="#040c18" stroke="#00e5c8" stroke-width="1.5"/>
+      <ellipse cx="50" cy="62" rx="4" ry="6" fill="#00e5c8" opacity="0.9"/>
+      <circle cx="50" cy="52" r="2" fill="#ffaa00"/>
+      <circle cx="78" cy="62" r="10" fill="#040c18" stroke="#00e5c8" stroke-width="1.5"/>
+      <ellipse cx="78" cy="62" rx="4" ry="6" fill="#00e5c8" opacity="0.9"/>
+      <circle cx="78" cy="52" r="2" fill="#ffaa00"/>
+      <polygon points="64,74 60,80 64,85 68,80" fill="#ffaa00" opacity="0.9"/>
+      <path d="M 56,90 Q 62,96 64,93 Q 66,96 72,90" fill="none" stroke="#00e5c8" stroke-width="1.2" opacity="0.5"/>
+      <line x1="56" y1="78" x2="28" y2="74" stroke="#00e5c8" stroke-width="0.8" opacity="0.4"/>
+      <line x1="56" y1="82" x2="28" y2="85" stroke="#00e5c8" stroke-width="0.8" opacity="0.4"/>
+      <line x1="72" y1="78" x2="100" y2="74" stroke="#00e5c8" stroke-width="0.8" opacity="0.4"/>
+      <line x1="72" y1="82" x2="100" y2="85" stroke="#00e5c8" stroke-width="0.8" opacity="0.4"/>
+    </svg>
+    <div class="label">App Icon · 128px</div>
+  </div>
+
+  <!-- 32px favicon -->
+  <div class="asset-card">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="64" height="64">
+      <rect width="32" height="32" rx="6" fill="#070e18"/>
+      <circle cx="16" cy="16" r="12" fill="none" stroke="#00e5c8" stroke-width="0.8" stroke-dasharray="2,2" opacity="0.5"/>
+      <circle cx="16" cy="4"  r="2" fill="#00e5c8"/>
+      <circle cx="28" cy="16" r="2" fill="#00e5c8"/>
+      <circle cx="16" cy="28" r="2" fill="#ffaa00"/>
+      <circle cx="4"  cy="16" r="2" fill="#00e5c8"/>
+      <ellipse cx="16" cy="17" rx="9" ry="8.5" fill="#040c18"/>
+      <polygon points="10,11 8,5 14,9"  fill="#040c18" stroke="#00e5c8" stroke-width="1"/>
+      <polygon points="22,11 24,5 18,9" fill="#040c18" stroke="#00e5c8" stroke-width="1"/>
+      <ellipse cx="12" cy="15" rx="2.5" ry="3.5" fill="#00e5c8" opacity="0.9"/>
+      <ellipse cx="20" cy="15" rx="2.5" ry="3.5" fill="#00e5c8" opacity="0.9"/>
+      <circle cx="16" cy="19" r="2" fill="#ffaa00" opacity="0.9"/>
+    </svg>
+    <div class="label">Favicon · 32px</div>
+  </div>
+
+  <!-- 16px micro icon -->
+  <div class="asset-card">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="64" height="64">
+      <rect width="16" height="16" rx="3" fill="#070e18"/>
+      <ellipse cx="8" cy="9" rx="5" ry="4.5" fill="#040c18" stroke="#00e5c8" stroke-width="0.7"/>
+      <polygon points="5,6 3.5,2 6.5,5"  fill="#040c18" stroke="#00e5c8" stroke-width="0.8"/>
+      <polygon points="11,6 12.5,2 9.5,5" fill="#040c18" stroke="#00e5c8" stroke-width="0.8"/>
+      <ellipse cx="6"  cy="8.5" rx="1.2" ry="1.8" fill="#00e5c8" opacity="0.9"/>
+      <ellipse cx="10" cy="8.5" rx="1.2" ry="1.8" fill="#00e5c8" opacity="0.9"/>
+      <circle cx="8" cy="11" r="1" fill="#ffaa00" opacity="0.9"/>
+    </svg>
+    <div class="label">Micro · 16px</div>
+  </div>
+
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     LOGO WORDMARK VARIANTS
+════════════════════════════════════════════════════ -->
+<div class="section-label">// Wordmark Variants</div>
+<div class="row">
+
+  <!-- Full horizontal lockup -->
+  <div class="asset-card" style="min-width:360px;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 80" width="360" height="80">
+      <defs>
+        <linearGradient id="wg1" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%"   stop-color="#00e5c8"/>
+          <stop offset="50%"  stop-color="#60d0ff"/>
+          <stop offset="100%" stop-color="#ffaa00"/>
+        </linearGradient>
+        <filter id="wglow"><feGaussianBlur stdDeviation="2" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+      <!-- Icon mark (mini) -->
+      <g transform="translate(8,8)">
+        <circle cx="32" cy="32" r="28" fill="none" stroke="#00e5c8" stroke-width="1" stroke-dasharray="4,3" opacity="0.4"/>
+        <circle cx="32" cy="4"  r="3.5" fill="#00e5c8" filter="url(#wglow)"/>
+        <circle cx="60" cy="32" r="3.5" fill="#00e5c8" filter="url(#wglow)"/>
+        <circle cx="32" cy="60" r="3.5" fill="#ffaa00" filter="url(#wglow)"/>
+        <circle cx="4"  cy="32" r="3.5" fill="#00e5c8" filter="url(#wglow)"/>
+        <ellipse cx="32" cy="34" rx="20" ry="19" fill="#070e18" stroke="#0d2030" stroke-width="1"/>
+        <polygon points="20,22 14,6 26,18"  fill="#070e18" stroke="#00e5c8" stroke-width="1.5"/>
+        <circle cx="14" cy="6" r="3" fill="#00e5c8" filter="url(#wglow)"/>
+        <polygon points="44,22 50,6 38,18" fill="#070e18" stroke="#00e5c8" stroke-width="1.5"/>
+        <circle cx="50" cy="6" r="3" fill="#00e5c8" filter="url(#wglow)"/>
+        <circle cx="22" cy="30" r="8" fill="#040c18" stroke="#00e5c8" stroke-width="1.5"/>
+        <ellipse cx="22" cy="30" rx="3" ry="5" fill="#00e5c8" opacity="0.9" filter="url(#wglow)"/>
+        <circle cx="22" cy="22" r="2" fill="#ffaa00" filter="url(#wglow)"/>
+        <circle cx="42" cy="30" r="8" fill="#040c18" stroke="#00e5c8" stroke-width="1.5"/>
+        <ellipse cx="42" cy="30" rx="3" ry="5" fill="#00e5c8" opacity="0.9" filter="url(#wglow)"/>
+        <circle cx="42" cy="22" r="2" fill="#ffaa00" filter="url(#wglow)"/>
+        <polygon points="32,38 28,44 32,49 36,44" fill="#ffaa00" opacity="0.9" filter="url(#wglow)"/>
+        <path d="M 24,52 Q 30,58 32,55 Q 34,58 40,52" fill="none" stroke="#00e5c8" stroke-width="1.2" opacity="0.5"/>
+        <line x1="24" y1="40" x2="8" y2="37"  stroke="#00e5c8" stroke-width="0.8" opacity="0.4"/>
+        <line x1="24" y1="44" x2="8" y2="47"  stroke="#00e5c8" stroke-width="0.8" opacity="0.4"/>
+        <line x1="40" y1="40" x2="56" y2="37" stroke="#00e5c8" stroke-width="0.8" opacity="0.4"/>
+        <line x1="40" y1="44" x2="56" y2="47" stroke="#00e5c8" stroke-width="0.8" opacity="0.4"/>
+        <circle cx="8"  cy="37" r="2" fill="#00e5c8" opacity="0.6"/>
+        <circle cx="8"  cy="47" r="2" fill="#00e5c8" opacity="0.6"/>
+        <circle cx="56" cy="37" r="2" fill="#00e5c8" opacity="0.6"/>
+        <circle cx="56" cy="47" r="2" fill="#00e5c8" opacity="0.6"/>
+      </g>
+      <!-- Wordmark -->
+      <text x="92" y="46" font-family="Orbitron, monospace" font-weight="900"
+            font-size="30" fill="url(#wg1)" filter="url(#wglow)" letter-spacing="4">
+        DAC-ECAT
+      </text>
+      <!-- Tagline -->
+      <text x="93" y="62" font-family="DM Mono, monospace" font-size="8"
+            fill="#2a4a60" letter-spacing="4">
+        DISTRIBUTED AUTOMATION CONTROL
+      </text>
+      <!-- Separator line -->
+      <line x1="86" y1="14" x2="86" y2="66" stroke="#1a3040" stroke-width="1"/>
+    </svg>
+    <div class="label">Horizontal Lockup</div>
+  </div>
+
+  <!-- Stacked wordmark -->
+  <div class="asset-card" style="min-width:220px;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 110" width="220" height="110">
+      <defs>
+        <linearGradient id="sg1" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#00e5c8"/>
+          <stop offset="100%" stop-color="#ffaa00"/>
+        </linearGradient>
+        <filter id="sglow"><feGaussianBlur stdDeviation="2" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+      <text x="110" y="44" text-anchor="middle"
+            font-family="Orbitron, monospace" font-weight="900"
+            font-size="34" fill="url(#sg1)" filter="url(#sglow)" letter-spacing="4">
+        DAC
+      </text>
+      <!-- Divider with nodes -->
+      <line x1="30"  y1="58" x2="90"  y2="58" stroke="#1a3040" stroke-width="0.75"/>
+      <circle cx="30"  cy="58" r="2.5" fill="#00e5c8" opacity="0.5"/>
+      <circle cx="90"  cy="58" r="2.5" fill="#00e5c8" opacity="0.5"/>
+      <text x="110" y="63" text-anchor="middle"
+            font-family="DM Mono, monospace" font-size="8" fill="#00e5c8" letter-spacing="6">
+        ECAT
+      </text>
+      <line x1="130" y1="58" x2="190" y2="58" stroke="#1a3040" stroke-width="0.75"/>
+      <circle cx="130" cy="58" r="2.5" fill="#ffaa00" opacity="0.5"/>
+      <circle cx="190" cy="58" r="2.5" fill="#ffaa00" opacity="0.5"/>
+      <text x="110" y="90" text-anchor="middle"
+            font-family="DM Mono, monospace" font-size="8" fill="#2a4a60" letter-spacing="3">
+        AUTOMATION CONTROL
+      </text>
+    </svg>
+    <div class="label">Stacked Wordmark</div>
+  </div>
+
+  <!-- Monochrome / light bg version -->
+  <div class="asset-card on-light" style="min-width:220px;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60" width="220" height="60">
+      <text x="110" y="36" text-anchor="middle"
+            font-family="Orbitron, monospace" font-weight="900"
+            font-size="28" fill="#0a1a2e" letter-spacing="4">
+        DAC-ECAT
+      </text>
+      <text x="110" y="52" text-anchor="middle"
+            font-family="DM Mono, monospace" font-size="7.5" fill="#4a7090" letter-spacing="4">
+        DISTRIBUTED AUTOMATION CONTROL
+      </text>
+      <line x1="28" y1="43" x2="52" y2="43" stroke="#b0c8d8" stroke-width="0.75"/>
+      <line x1="168" y1="43" x2="192" y2="43" stroke="#b0c8d8" stroke-width="0.75"/>
+    </svg>
+    <div class="label">On Light Background</div>
+  </div>
+
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     UI GLYPHS
+════════════════════════════════════════════════════ -->
+<div class="section-label">// UI Glyphs — EtherCAT Node Icons</div>
+<div class="row">
+
+  <!-- EtherCAT ring node -->
+  <div class="asset-card">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="64" height="64">
+      <circle cx="24" cy="24" r="18" fill="none" stroke="#00e5c8" stroke-width="1.5" stroke-dasharray="5,4" opacity="0.6"/>
+      <circle cx="24" cy="6"  r="3.5" fill="#00e5c8"/>
+      <circle cx="42" cy="24" r="3.5" fill="#00e5c8"/>
+      <circle cx="24" cy="42" r="3.5" fill="#ffaa00"/>
+      <circle cx="6"  cy="24" r="3.5" fill="#00e5c8"/>
+      <circle cx="24" cy="24" r="7" fill="#040c18" stroke="#00e5c8" stroke-width="1.2"/>
+      <circle cx="24" cy="24" r="3" fill="#00e5c8"/>
+    </svg>
+    <div class="label">ECAT Ring Node</div>
+  </div>
+
+  <!-- Cat eye / bus monitor -->
+  <div class="asset-card">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="64" height="64">
+      <circle cx="24" cy="24" r="20" fill="#040c18" stroke="#00e5c8" stroke-width="1.5"/>
+      <circle cx="24" cy="24" r="14" fill="none" stroke="#00e5c8" stroke-width="0.8" opacity="0.3" stroke-dasharray="3,3"/>
+      <ellipse cx="24" cy="24" rx="10" ry="13" fill="#001828"/>
+      <ellipse cx="24" cy="24" rx="10" ry="13" fill="none" stroke="#00e5c8" stroke-width="1"/>
+      <ellipse cx="24" cy="24" rx="3.5" ry="10" fill="#00e5c8" opacity="0.9"/>
+      <circle cx="29" cy="18" r="4" fill="white" opacity="0.3"/>
+      <circle cx="34" cy="24" r="3" fill="#00e5c8" opacity="0.7"/>
+      <circle cx="14" cy="24" r="3" fill="#00e5c8" opacity="0.7"/>
+      <circle cx="24" cy="10" r="3" fill="#ffaa00" opacity="0.8"/>
+    </svg>
+    <div class="label">Bus Monitor</div>
+  </div>
+
+  <!-- DAC node -->
+  <div class="asset-card">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="64" height="64">
+      <rect x="8" y="8" width="32" height="32" rx="4" fill="#040c18" stroke="#00e5c8" stroke-width="1.5"/>
+      <rect x="14" y="14" width="20" height="20" rx="2" fill="none" stroke="#00e5c8" stroke-width="0.8" opacity="0.3"/>
+      <!-- D A C letters -->
+      <text x="24" y="27" text-anchor="middle" font-family="Orbitron, monospace"
+            font-weight="700" font-size="10" fill="#00e5c8" letter-spacing="1">DAC</text>
+      <!-- Corner ports -->
+      <rect x="4"  y="20" width="6" height="8" rx="1" fill="#00e5c8" opacity="0.7"/>
+      <rect x="38" y="20" width="6" height="8" rx="1" fill="#00e5c8" opacity="0.7"/>
+      <rect x="20" y="4"  width="8" height="6" rx="1" fill="#ffaa00" opacity="0.7"/>
+      <rect x="20" y="38" width="8" height="6" rx="1" fill="#ffaa00" opacity="0.7"/>
+    </svg>
+    <div class="label">DAC Node</div>
+  </div>
+
+  <!-- Connected / online -->
+  <div class="asset-card">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="64" height="64">
+      <!-- Two nodes connected by ring segment -->
+      <circle cx="12" cy="24" r="8"  fill="#040c18" stroke="#00e5c8" stroke-width="1.5"/>
+      <circle cx="36" cy="24" r="8"  fill="#040c18" stroke="#00e5c8" stroke-width="1.5"/>
+      <circle cx="12" cy="24" r="3"  fill="#00e5c8"/>
+      <circle cx="36" cy="24" r="3"  fill="#00e5c8"/>
+      <!-- Bus line -->
+      <line x1="20" y1="24" x2="28" y2="24" stroke="#00e5c8" stroke-width="2"/>
+      <!-- Data pulse dots -->
+      <circle cx="24" cy="24" r="2.5" fill="#ffaa00"/>
+      <!-- Arrowheads -->
+      <polygon points="28,21 34,24 28,27" fill="#00e5c8" opacity="0.6"/>
+    </svg>
+    <div class="label">Bus Link</div>
+  </div>
+
+  <!-- Paw / signal -->
+  <div class="asset-card">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="64" height="64">
+      <!-- Paw print with network nodes as toes -->
+      <!-- Main pad -->
+      <ellipse cx="24" cy="30" rx="11" ry="9" fill="#040c18" stroke="#00e5c8" stroke-width="1.5"/>
+      <ellipse cx="24" cy="30" rx="11" ry="9" fill="none" stroke="#00e5c8" stroke-width="1.5"/>
+      <!-- Toe pads as EtherCAT nodes -->
+      <circle cx="13" cy="18" r="5" fill="#040c18" stroke="#00e5c8" stroke-width="1.5"/>
+      <circle cx="24" cy="14" r="5" fill="#040c18" stroke="#00e5c8" stroke-width="1.5"/>
+      <circle cx="35" cy="18" r="5" fill="#040c18" stroke="#00e5c8" stroke-width="1.5"/>
+      <!-- Node centers -->
+      <circle cx="13" cy="18" r="2" fill="#00e5c8"/>
+      <circle cx="24" cy="14" r="2" fill="#ffaa00"/>
+      <circle cx="35" cy="18" r="2" fill="#00e5c8"/>
+      <!-- Center pad mark -->
+      <ellipse cx="24" cy="30" rx="5" ry="4" fill="#00e5c8" opacity="0.15"/>
+      <circle  cx="24" cy="30" r="2" fill="#00e5c8" opacity="0.6"/>
+    </svg>
+    <div class="label">Paw / Signal</div>
+  </div>
+
+  <!-- Error / disconnect -->
+  <div class="asset-card">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="64" height="64">
+      <circle cx="24" cy="24" r="20" fill="#040c18" stroke="#ff4455" stroke-width="1.5"/>
+      <!-- broken ring arc -->
+      <path d="M 24,4 A 20,20 0 0 1 44,24" fill="none" stroke="#ff4455" stroke-width="2" opacity="0.7"/>
+      <path d="M 4,24 A 20,20 0 0 0 24,44" fill="none" stroke="#ff4455" stroke-width="2" opacity="0.4"/>
+      <!-- cat ears broken -->
+      <polygon points="14,20 8,8 20,16"  fill="none" stroke="#ff4455" stroke-width="1.2" opacity="0.5" stroke-dasharray="2,2"/>
+      <polygon points="34,20 40,8 28,16" fill="none" stroke="#ff4455" stroke-width="1.2" opacity="0.5" stroke-dasharray="2,2"/>
+      <!-- X mark -->
+      <line x1="17" y1="17" x2="31" y2="31" stroke="#ff4455" stroke-width="2.5"/>
+      <line x1="31" y1="17" x2="17" y2="31" stroke="#ff4455" stroke-width="2.5"/>
+    </svg>
+    <div class="label">Disconnect / Error</div>
+  </div>
+
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     LOADING / PROGRESS INDICATOR
+════════════════════════════════════════════════════ -->
+<div class="section-label">// Animated Loading Indicator</div>
+<div class="row">
+  <div class="asset-card">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+      <defs>
+        <style>
+          .spin1 { transform-origin: 60px 60px; animation: spin 3s linear infinite; }
+          .spin2 { transform-origin: 60px 60px; animation: spin 2s linear infinite reverse; }
+          .pulse { animation: pulse 1.5s ease-in-out infinite; }
+          .blink { animation: blink 0.9s ease-in-out infinite; }
+          @keyframes spin  { to { transform: rotate(360deg); } }
+          @keyframes pulse { 0%,100%{opacity:0.4;} 50%{opacity:1;} }
+          @keyframes blink { 0%,100%{opacity:1;} 50%{opacity:0.15;} }
+        </style>
+        <filter id="lGlow"><feGaussianBlur stdDeviation="3" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+      <!-- Outer spinning ring dashes -->
+      <circle cx="60" cy="60" r="52" fill="none" stroke="#00e5c8" stroke-width="1.5"
+              stroke-dasharray="8,6" opacity="0.5" class="spin1"/>
+      <!-- Inner counter-spinning ring -->
+      <circle cx="60" cy="60" r="42" fill="none" stroke="#0066cc" stroke-width="1"
+              stroke-dasharray="5,8" opacity="0.4" class="spin2"/>
+      <!-- Spinning nodes on outer ring -->
+      <g class="spin1" filter="url(#lGlow)">
+        <circle cx="60"  cy="8"  r="4" fill="#00e5c8"/>
+        <circle cx="112" cy="60" r="4" fill="#00e5c8"/>
+        <circle cx="60"  cy="112" r="4" fill="#ffaa00"/>
+        <circle cx="8"   cy="60" r="4" fill="#00e5c8"/>
+      </g>
+      <!-- Static cat face center -->
+      <ellipse cx="60" cy="62" rx="24" ry="22" fill="#040c18" stroke="#0d2030" stroke-width="1"/>
+      <!-- Ears -->
+      <polygon points="44,44 38,28 52,40" fill="#040c18" stroke="#00e5c8" stroke-width="1.5"/>
+      <polygon points="76,44 82,28 68,40" fill="#040c18" stroke="#00e5c8" stroke-width="1.5"/>
+      <!-- Eyes blinking -->
+      <g class="pulse">
+        <circle cx="51" cy="58" r="7" fill="#040c18" stroke="#00e5c8" stroke-width="1.2"/>
+        <ellipse cx="51" cy="58" rx="2" ry="5" fill="#00e5c8" opacity="0.9" filter="url(#lGlow)"/>
+        <circle cx="69" cy="58" r="7" fill="#040c18" stroke="#00e5c8" stroke-width="1.2"/>
+        <ellipse cx="69" cy="58" rx="2" ry="5" fill="#00e5c8" opacity="0.9" filter="url(#lGlow)"/>
+      </g>
+      <!-- Nose -->
+      <polygon points="60,67 57,72 60,76 63,72" fill="#ffaa00" opacity="0.9" filter="url(#lGlow)" class="blink"/>
+    </svg>
+    <div class="label">Loading Spinner</div>
+  </div>
+
+  <!-- Progress bar style -->
+  <div class="asset-card" style="min-width:280px;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 60" width="280" height="60">
+      <defs>
+        <style>
+          .march { stroke-dasharray: 10,8; animation: march 1s linear infinite; }
+          @keyframes march { to { stroke-dashoffset: -18; } }
+        </style>
+        <linearGradient id="pgBar" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%"   stop-color="#00e5c8"/>
+          <stop offset="100%" stop-color="#0088ff"/>
+        </linearGradient>
+        <filter id="pgGlow"><feGaussianBlur stdDeviation="2" result="b"/>
+          <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+      <!-- Track -->
+      <rect x="10" y="26" width="260" height="8" rx="1" fill="#0d1a28" stroke="#1a2535" stroke-width="1"/>
+      <!-- Fill (68%) -->
+      <rect x="10" y="26" width="177" height="8" rx="1" fill="url(#pgBar)" filter="url(#pgGlow)" opacity="0.85"/>
+      <!-- Marching ants on top -->
+      <line x1="10" y1="30" x2="187" y2="30" stroke="white" stroke-width="1" opacity="0.2" class="march"/>
+      <!-- Node dots along track -->
+      <circle cx="10"  cy="30" r="4" fill="#00e5c8" filter="url(#pgGlow)"/>
+      <circle cx="75"  cy="30" r="3" fill="#00e5c8" opacity="0.6"/>
+      <circle cx="140" cy="30" r="3" fill="#0088ff" opacity="0.6"/>
+      <circle cx="187" cy="30" r="5" fill="#00e5c8" filter="url(#pgGlow)"/>
+      <circle cx="270" cy="30" r="4" fill="#1a2535"/>
+      <circle cx="270" cy="30" r="2" fill="#1a3545"/>
+      <!-- Label -->
+      <text x="10"  y="18" font-family="DM Mono, monospace" font-size="7" fill="#2a4a60" letter-spacing="2">INITIALIZING ECAT BUS</text>
+      <text x="270" y="18" text-anchor="end" font-family="DM Mono, monospace" font-size="7" fill="#00e5c8" letter-spacing="1">68%</text>
+    </svg>
+    <div class="label">Progress / Init Bar</div>
+  </div>
+
+</div>
+
+<!-- ═══════════════════════════════════════════════════
+     COLOUR PALETTE
+════════════════════════════════════════════════════ -->
+<div class="section-label">// Brand Colour System</div>
+<div class="row" style="margin-bottom:0;">
+  <div class="asset-card" style="flex-direction:row; gap:12px; flex-wrap:wrap; min-width:100%; justify-content:flex-start; padding:20px 24px;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 580 60" width="580" height="60">
+      <defs>
+        <style>.sw text { font-family: "DM Mono", monospace; }</style>
+      </defs>
+      <g class="sw">
+        <!-- Swatch 1 -->
+        <rect x="0"   y="0" width="68" height="40" rx="2" fill="#00e5c8"/>
+        <text x="34"  y="54" text-anchor="middle" font-size="8" fill="#2a4a60">#00E5C8</text>
+        <text x="34"  y="64" text-anchor="middle" font-size="7" fill="#1a3040">Primary</text>
+        <!-- Swatch 2 -->
+        <rect x="80"  y="0" width="68" height="40" rx="2" fill="#0088ff"/>
+        <text x="114" y="54" text-anchor="middle" font-size="8" fill="#2a4a60">#0088FF</text>
+        <text x="114" y="64" text-anchor="middle" font-size="7" fill="#1a3040">Network</text>
+        <!-- Swatch 3 -->
+        <rect x="160" y="0" width="68" height="40" rx="2" fill="#ffaa00"/>
+        <text x="194" y="54" text-anchor="middle" font-size="8" fill="#2a4a60">#FFAA00</text>
+        <text x="194" y="64" text-anchor="middle" font-size="7" fill="#1a3040">Amber / Nose</text>
+        <!-- Swatch 4 -->
+        <rect x="240" y="0" width="68" height="40" rx="2" fill="#ff4455"/>
+        <text x="274" y="54" text-anchor="middle" font-size="8" fill="#2a4a60">#FF4455</text>
+        <text x="274" y="64" text-anchor="middle" font-size="7" fill="#1a3040">Error</text>
+        <!-- Swatch 5 -->
+        <rect x="320" y="0" width="68" height="40" rx="2" fill="#0d1218"/>
+        <rect x="320" y="0" width="68" height="40" rx="2" fill="none" stroke="#1a2535" stroke-width="1"/>
+        <text x="354" y="54" text-anchor="middle" font-size="8" fill="#2a4a60">#0D1218</text>
+        <text x="354" y="64" text-anchor="middle" font-size="7" fill="#1a3040">Surface</text>
+        <!-- Swatch 6 -->
+        <rect x="400" y="0" width="68" height="40" rx="2" fill="#1a2535"/>
+        <text x="434" y="54" text-anchor="middle" font-size="8" fill="#2a4a60">#1A2535</text>
+        <text x="434" y="64" text-anchor="middle" font-size="7" fill="#1a3040">Border</text>
+        <!-- Swatch 7 -->
+        <rect x="480" y="0" width="68" height="40" rx="2" fill="#7a9bb5"/>
+        <text x="514" y="54" text-anchor="middle" font-size="8" fill="#2a4a60">#7A9BB5</text>
+        <text x="514" y="64" text-anchor="middle" font-size="7" fill="#1a3040">Text</text>
+      </g>
+    </svg>
+  </div>
+</div>
+
+</body>
+</html>

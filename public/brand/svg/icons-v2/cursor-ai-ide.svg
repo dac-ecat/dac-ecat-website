@@ -1,0 +1,17 @@
+<svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+  <rect x="1" y="1" rx="3" fill="#0a1520" stroke="#ff6eb4" stroke-width="1.2"/>
+  <rect x="1" y="1" rx="3" fill="#091018"/>
+  <rect x="1" y="4"  fill="#091018"/>
+  <!-- cursor arrow in header -->
+  <polygon points="4,2 4,6 5.8,5 6.5,7 7.2,6.7 6.5,4.8 8.5,4.8" fill="#ff6eb4" opacity="0.8"/>
+  <text x="10" y="6" font-family="DM Mono,monospace" font-size="3.5" fill="#ff6eb4" opacity="0.6" letter-spacing="1">CURSOR</text>
+  <!-- code + AI suggestion overlay -->
+  <rect x="4"  y="10" rx="0.4" fill="#3b9eff" opacity="0.3"/>
+  <rect x="4"  y="14" rx="0.4" fill="#1a2535"/>
+  <rect x="4"  y="18" rx="0.4" fill="#ff6eb4" opacity="0.15"/>
+  <rect x="4"  y="22" rx="0.4" fill="#1a2535"/>
+  <!-- ghost suggestion -->
+  <rect x="16" y="22" rx="0.4" fill="#ff6eb4" opacity="0.2" stroke="#ff6eb4" stroke-width="0.4" stroke-dasharray="1.5,1"/>
+  <rect x="4"  y="27" rx="1" fill="#ff6eb4" opacity="0.08" stroke="#ff6eb4" stroke-width="0.5" stroke-dasharray="2,1.5"/>
+  <rect x="6"  y="28.5" rx="0.4" fill="#ff6eb4" opacity="0.2"/>
+</svg>

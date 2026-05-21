@@ -1,0 +1,20 @@
+<svg viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+  <rect x="1" y="1" rx="3" fill="#0a1520" stroke="#00e5c8" stroke-width="1.2"/>
+  <!-- header row -->
+  <rect x="3" y="4"  rx="0.5" fill="#00e5c8" opacity="0.15"/>
+  <line x1="3"  y1="9"  x2="33" y2="9"  stroke="#00e5c8" stroke-width="0.6" opacity="0.4"/>
+  <!-- col dividers -->
+  <line x1="12" y1="4"  x2="12" y2="32" stroke="#1a2535" stroke-width="0.6"/>
+  <line x1="22" y1="4"  x2="22" y2="32" stroke="#1a2535" stroke-width="0.6"/>
+  <!-- data rows -->
+  <line x1="3"  y1="14" x2="33" y2="14" stroke="#1a2535" stroke-width="0.5"/>
+  <line x1="3"  y1="19" x2="33" y2="19" stroke="#1a2535" stroke-width="0.5"/>
+  <line x1="3"  y1="24" x2="33" y2="24" stroke="#1a2535" stroke-width="0.5"/>
+  <line x1="3"  y1="29" x2="33" y2="29" stroke="#1a2535" stroke-width="0.5"/>
+  <!-- selected row highlight -->
+  <rect x="3" y="19" rx="0" fill="#00e5c8" opacity="0.06"/>
+  <!-- cell content lines -->
+  <rect x="4"  y="5.5"  rx="0.3" fill="#00e5c8" opacity="0.4"/>
+  <rect x="14" y="5.5"  rx="0.3" fill="#00e5c8" opacity="0.4"/>
+  <rect x="24" y="5.5"  rx="0.3" fill="#00e5c8" opacity="0.4"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
+  <rect x="1" y="1" rx="3" fill="#091828" stroke="#a06af7" stroke-width="1.2"/>
+  <!-- Timer/task cycle bar -->
+  <rect x="4"  y="10" rx="1" fill="#a06af7" opacity="0.7"/>
+  <rect x="12" y="14" rx="1" fill="#a06af7" opacity="0.4"/>
+  <rect x="20" y="16" rx="1" fill="#a06af7" opacity="0.25"/>
+  <line x1="4" y1="22" x2="26" y2="22" stroke="#a06af7" stroke-width="0.8" opacity="0.4"/>
+  <rect x="1" y="1" fill="#a06af7" opacity="0.4" rx="1"/>
+  <text x="14" y="9" text-anchor="middle" font-family="DM Mono,monospace" font-size="4.5" fill="#a06af7" opacity="0.6">TASK</text>
+</svg>

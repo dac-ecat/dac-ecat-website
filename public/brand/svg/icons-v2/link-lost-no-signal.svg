@@ -1,0 +1,9 @@
+<svg viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="14" cy="14" r="13" fill="#091828" stroke="#ff4d6a" stroke-width="1.2"/>
+  <!-- broken chain -->
+  <path d="M 10,18 Q 8,18 8,16 Q 8,14 10,14 L 12,14" fill="none" stroke="#ff4d6a" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M 16,14 L 18,14 Q 20,14 20,16 Q 20,18 18,18 L 16,18" fill="none" stroke="#ff4d6a" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- gap with X -->
+  <line x1="12.5" y1="12" x2="15.5" y2="16" stroke="#ff4d6a" stroke-width="1" stroke-linecap="round" opacity="0.7"/>
+  <line x1="15.5" y1="12" x2="12.5" y2="16" stroke="#ff4d6a" stroke-width="1" stroke-linecap="round" opacity="0.7"/>
+</svg>

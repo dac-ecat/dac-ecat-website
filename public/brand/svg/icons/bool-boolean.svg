@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28">
+  <rect x="1" y="1" rx="3" fill="#091828" stroke="#ff4d6a" stroke-width="1.2"/>
+  <!-- Toggle switch shape -->
+  <rect x="5" y="10" rx="4" fill="#091828" stroke="#ff4d6a" stroke-width="1"/>
+  <circle cx="19" cy="14" r="4" fill="#ff4d6a" opacity="0.85"/>
+  <!-- 1/0 labels -->
+  <text x="9" y="17" text-anchor="middle" font-family="DM Mono,monospace" font-size="5" fill="#ff4d6a" opacity="0.5">0</text>
+  <text x="19" y="17" text-anchor="middle" font-family="DM Mono,monospace" font-size="5" fill="#091828" font-weight="bold">1</text>
+  <rect x="1" y="1" fill="#ff4d6a" opacity="0.4" rx="1"/>
+  <rect x="22" y="25.5" fill="#ff4d6a" opacity="0.4" rx="1"/>
+</svg>
