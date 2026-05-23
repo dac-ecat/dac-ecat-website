@@ -10,6 +10,7 @@ body {
   background: #080b0f;
   color: #7a9bb5;
   font-family: var(--font-dm-mono), 'Courier New', monospace;
+  min-height: 100vh;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -54,3 +55,14 @@ body {
 
 /* Selection */
 ::selection { background: rgba(0, 229, 200, 0.2); color: #d0e8f0; }
+
+/* Legal pages */
+.legal-h2 {
+  @apply font-orbitron font-bold text-base tracking-wider text-brand-bright uppercase mb-3;
+}
+.legal-link {
+  @apply text-brand-teal hover:text-brand-teal/80 underline underline-offset-2 transition-colors;
+}
+.legal-list {
+  @apply list-disc pl-5 space-y-1.5 mt-2;
+}

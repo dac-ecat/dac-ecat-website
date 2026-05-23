@@ -1,10 +1,19 @@
 import Image from 'next/image'
+import Link from 'next/link'
+import CookieSettingsLink from '@/components/CookieSettingsLink'
 
 const NAV_LINKS = [
   { label: 'Features', href: '#features' },
+  { label: 'Preview', href: '#preview' },
   { label: 'How It Works', href: '#how-it-works' },
   { label: 'AI-Powered', href: '#ai-section' },
   { label: 'Early Access', href: '#early-access' },
+]
+
+const LEGAL_LINKS = [
+  { label: 'Impressum', href: '/impressum' },
+  { label: 'Datenschutz', href: '/datenschutz' },
+  { label: 'AGB', href: '/agb' },
 ]
 
 const TECH_BADGES = [
@@ -74,8 +83,22 @@ export default function Footer() {
           </p>
         </div>
 
+        {/* Legal */}
+        <nav className="mt-8 pt-6 border-t border-brand-border flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
+          {LEGAL_LINKS.map(({ label, href }) => (
+            <Link
+              key={href}
+              href={href}
+              className="font-mono text-[10px] tracking-wider text-brand-dim hover:text-brand-teal transition-colors uppercase"
+            >
+              {label}
+            </Link>
+          ))}
+          <CookieSettingsLink />
+        </nav>
+
         {/* Bottom tagline */}
-        <div className="mt-8 pt-6 border-t border-brand-border text-center">
+        <div className="mt-6 text-center">
           <p className="font-mono text-[10px] text-brand-dim/50 tracking-[0.2em] uppercase">
             Built for engineers who move fast
           </p>

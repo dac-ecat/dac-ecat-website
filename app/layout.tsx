@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Orbitron, DM_Mono } from 'next/font/google'
+import CookieConsent from '@/components/CookieConsent'
 import './globals.css'
 
 const orbitron = Orbitron({
@@ -54,7 +55,10 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${orbitron.variable} ${dmMono.variable}`}>
-      <body>{children}</body>
+      <body>
+        {children}
+        <CookieConsent />
+      </body>
     </html>
   )
 }

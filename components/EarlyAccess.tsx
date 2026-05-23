@@ -1,6 +1,7 @@
 'use client'
 import { useState } from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function EarlyAccess() {
   const [email, setEmail] = useState('')
@@ -61,7 +62,7 @@ export default function EarlyAccess() {
         </p>
 
         {status === 'success' ? (
-          <div className="flex items-center justify-center gap-3 px-6 py-4 rounded-xl border border-brand-teal/40 bg-brand-teal/8">
+          <div className="flex items-center justify-center gap-3 px-6 py-4 rounded-xl border border-brand-teal/40 bg-brand-teal/10">
             <svg className="w-5 h-5 text-brand-teal flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
             </svg>
@@ -105,8 +106,14 @@ export default function EarlyAccess() {
           <p className="font-mono text-brand-error text-xs mt-3">{errorMsg}</p>
         )}
 
-        <p className="font-mono text-brand-dim text-xs mt-6 tracking-wider">
+        <p className="font-mono text-brand-dim text-xs mt-6 tracking-wider leading-relaxed">
           No spam. Just one notification when the build ships.
+          <br />
+          Mit der Anmeldung akzeptieren Sie unsere{' '}
+          <Link href="/datenschutz" className="text-brand-teal hover:underline">
+            Datenschutzerklärung
+          </Link>
+          .
         </p>
       </div>
     </section>
