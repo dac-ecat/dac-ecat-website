@@ -3,10 +3,11 @@ import Image from 'next/image'
 import { useState, useEffect } from 'react'
 
 const NAV_LINKS = [
-  { label: 'Features', href: '#features' },
-  { label: 'Preview', href: '#preview' },
-  { label: 'How It Works', href: '#how-it-works' },
-  { label: 'AI-Powered', href: '#ai-section' },
+  { label: 'Features', href: '/#features' },
+  { label: 'Preview', href: '/#preview' },
+  { label: 'Product', href: '/product' },
+  { label: 'Pricing', href: '/pricing' },
+  { label: 'Get Started', href: '/getting-started' },
 ]
 
 export default function Navbar() {
@@ -63,7 +64,7 @@ export default function Navbar() {
         {/* CTA + mobile toggle */}
         <div className="flex items-center gap-3">
           <a
-            href="#early-access"
+            href="/#early-access"
             className="hidden sm:flex items-center gap-2 font-mono text-xs tracking-[0.15em] px-4 py-2 rounded border border-brand-teal/60 text-brand-teal hover:bg-brand-teal/10 hover:border-brand-teal transition-all uppercase"
           >
             <span className="w-1.5 h-1.5 rounded-full bg-brand-teal animate-pulse" />
@@ -99,7 +100,7 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#early-access"
+            href="/#early-access"
             className="font-mono text-xs tracking-[0.15em] px-4 py-2.5 rounded border border-brand-teal/60 text-brand-teal hover:bg-brand-teal/10 transition-all uppercase text-center mt-2"
             onClick={() => setMenuOpen(false)}
           >

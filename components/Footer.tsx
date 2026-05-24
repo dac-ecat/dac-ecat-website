@@ -3,11 +3,12 @@ import Link from 'next/link'
 import CookieSettingsLink from '@/components/CookieSettingsLink'
 
 const NAV_LINKS = [
-  { label: 'Features', href: '#features' },
-  { label: 'Preview', href: '#preview' },
-  { label: 'How It Works', href: '#how-it-works' },
-  { label: 'AI-Powered', href: '#ai-section' },
-  { label: 'Early Access', href: '#early-access' },
+  { label: 'Features', href: '/#features' },
+  { label: 'Preview', href: '/#preview' },
+  { label: 'Product', href: '/product' },
+  { label: 'Pricing', href: '/pricing' },
+  { label: 'Get Started', href: '/getting-started' },
+  { label: 'Early Access', href: '/#early-access' },
 ]
 
 const LEGAL_LINKS = [

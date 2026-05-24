@@ -1,5 +1,12 @@
 import Image from 'next/image'
 
+const STATS = [
+  { value: '1', label: 'exe — no install' },
+  { value: '~20MB', label: 'app footprint' },
+  { value: 'kHz', label: 'native Rust acquisition' },
+  { value: '∞', label: 'runtimes — any CLI tool' },
+]
+
 const PROTOCOL_BADGES = [
   'TwinCAT ADS',
   'EtherCAT SOEM',
@@ -80,17 +87,22 @@ export default function Hero() {
           Studio
         </p>
 
+        {/* Acquire · Script · Visualize */}
+        <p className="font-mono text-brand-teal text-sm tracking-[0.3em] uppercase mb-4">
+          Acquire · Script · Visualize
+        </p>
+
         {/* Tagline */}
         <p className="font-mono text-brand-bright text-base sm:text-lg md:text-xl max-w-2xl mx-auto leading-relaxed mb-4">
-          The AI-powered IDE for EtherCAT &amp; TwinCAT engineers.
+          The data acquisition and scripting IDE for TwinCAT and EtherCAT engineers.
         </p>
         <p className="font-mono text-brand-text text-sm md:text-base max-w-xl mx-auto leading-relaxed mb-10">
-          Dockable workspace · Variable explorer · Python scripting ·
-          Live data logging · Claude AI terminal. All in one native app.
+          Connect to your PLC, acquire live data at native speed, script in any language,
+          visualize signals, and generate engineering tooling with AI assistance — all in one native app.
         </p>
 
         {/* CTAs */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10">
           <a
             href="#early-access"
             className="font-orbitron font-bold text-sm tracking-widest px-8 py-4 rounded bg-brand-teal text-brand-bg hover:bg-brand-teal/90 active:scale-[0.98] transition-all shadow-teal-glow-lg uppercase min-w-[210px] text-center"
@@ -98,11 +110,21 @@ export default function Hero() {
             Request Access
           </a>
           <a
-            href="#features"
+            href="/pricing"
             className="font-mono text-sm tracking-wider px-8 py-4 rounded border border-brand-border text-brand-text hover:border-brand-teal/60 hover:text-brand-teal transition-all uppercase min-w-[210px] text-center"
           >
-            Explore Features →
+            See Pricing →
           </a>
+        </div>
+
+        {/* Stats bar */}
+        <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 mb-10">
+          {STATS.map(({ value, label }) => (
+            <div key={label} className="text-center">
+              <p className="font-orbitron font-black text-xl text-brand-teal">{value}</p>
+              <p className="font-mono text-[10px] text-brand-dim tracking-wider uppercase mt-0.5">{label}</p>
+            </div>
+          ))}
         </div>
 
         {/* Protocol badges */}

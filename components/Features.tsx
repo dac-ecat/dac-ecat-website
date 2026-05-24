@@ -15,63 +15,63 @@ const FEATURES: Feature[] = [
     title: 'Variable Explorer',
     accent: 'teal',
     description:
-      'Auto-scan any TwinCAT ADS or EtherCAT SOEM target. Browse all PLC symbols with type-annotated badges — LREAL, INT, BOOL, DWORD, and more. Filter, search, and pin variables for logging.',
+      'Native Rust backend connects to any AMS Net ID — local or remote. Full PLC symbol tree with live values and type badges. Record button on any variable starts logging immediately to a timestamped CSV.',
   },
   {
     icon: '/brand/svg/icons-v2/monaco-editor.svg',
-    title: 'Python Script Editor',
+    title: 'Multi-Language Script Editor',
     accent: 'blue',
     description:
-      'Full Monaco editor with Python syntax highlighting and IntelliSense. Built-in Pyodide REPL to execute scripts without leaving the workspace. Tab-based multi-file editing.',
+      'Monaco editor — the same engine powering VS Code — with automatic runtime detection from file extension. One Play button runs Python, Lua, Node, R, Julia, PowerShell, or any PATH-accessible tool.',
   },
   {
     icon: '/brand/svg/icons-v2/claude-ai-chat.svg',
-    title: 'AI Code Assistants',
+    title: 'AI-Assisted Engineering',
     accent: 'amber',
     description:
-      'Claude AI and Cursor agent panels wired directly to your project context. AI sees your full variable list, ADS connection config, and all scripts — generates advanced data logging code on demand.',
+      'AI agents run inside the live project folder with full access to your variable list, ADS config, scripts, and logged data. Describe what you need — AI generates correct, runnable industrial tooling in seconds.',
   },
   {
     icon: '/brand/svg/icons-v2/logger-recorder.svg',
     title: 'Live Data Logger',
     accent: 'teal',
     description:
-      'Record any PLC variables to timestamped CSVs with millisecond-precision timestamps. Multi-channel logs, auto-named output files, comment headers for easy pandas ingestion.',
+      'Multi-channel logging with millisecond-precision timestamps. Auto-named CSV output in structured project folders. User-defined custom headers — ready for pandas, MATLAB, or Excel without post-processing.',
   },
   {
     icon: '/brand/svg/icons-v2/ecat-network.svg',
-    title: 'EtherCAT Native',
+    title: 'TwinCAT ADS Native',
     accent: 'blue',
     description:
-      'First-class TwinCAT ADS, EtherCAT SOEM, and Modbus TCP support. Connect to local TwinCAT runtime or any remote AMS target. Connection settings persist with the project.',
+      'First-class TwinCAT ADS connectivity with Beckhoff AMS Net ID routing. Local or remote targets. DAC-ECAT structured types auto-enumerate on scan — alarm limits and warning bands render automatically.',
   },
   {
     icon: '/brand/svg/icons-v2/file-explorer.svg',
-    title: 'Solution Explorer',
+    title: 'Project Workspace',
     accent: 'amber',
     description:
-      'Project-aware file browser with custom icons for .py, .dacat, .dacvar, .csv, and calibration files. Double-click to open in the Monaco editor.',
+      'GoldenLayout panel configuration saves with every project — every panel, position, tab, and size restored on next open. Project folder structure created automatically: Config/, Scripts/, Outputdata/, Calibrations/.',
   },
   {
     icon: '/brand/svg/icons-v2/terminal-shell.svg',
-    title: 'AI Terminals',
+    title: 'Integrated Terminals',
     accent: 'teal',
     description:
-      'PuTTY-piped terminal panels running Claude Code and Cursor CLI inside the project folder. AI agents can read your scripts, variable lists, and build advanced tooling autonomously.',
+      'Full PTY terminal panels piped directly into the workspace. Claude Code, Cursor, and any CLI-based AI agent run natively. Multiple terminals open simultaneously — one per script, one per AI agent, one for shell work.',
   },
   {
     icon: '/brand/svg/icons-v2/plot-waveform.svg',
-    title: 'Live Waveform Charts',
+    title: 'Live Waveform Scopes',
     accent: 'blue',
     description:
-      'Real-time scope charts backed by a ring-buffer engine with intelligent decimation. Visualize PLC signals live without dropping frames on high-frequency data.',
+      'Real-time scope charts with range, warning, and alarm band overlays. Single-variable in-panel live plots for instant signal checking. Multi-variable scope windows right-click from the variable explorer.',
   },
   {
     icon: '/brand/svg/icons-v2/output-console.svg',
-    title: 'HMI Panel Embedding',
+    title: 'Embedded Panel Views',
     accent: 'amber',
     description:
-      'Dock any web-based TwinCAT HMI or custom dashboard as an iframe panel. Your existing HMIs become first-class workspace citizens with no extra software.',
+      'Any web-based interface docks as a first-class panel — TwinCAT HMIs, Streamlit dashboards, Plotly Dash apps, vendor tools. AI-generated dashboards launch with one click and embed automatically.',
   },
 ]
 
